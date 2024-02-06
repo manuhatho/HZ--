@@ -68,7 +68,7 @@
     
     header{
         width: 100%;
-        max-width: 67%;
+        max-width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -91,6 +91,7 @@
     
     header nav  {
         color: white;
+     
        
     }
     header #hotel {
@@ -589,7 +590,7 @@
     /* ------------------------------------RESPONSIVE ACCUEIL-------------------------------------------------- */
     
     /* 2xl */
-    @media (max-width:1694px) {
+    @media (max-width:2317px) {
         header{
             max-width: 70%;
             
@@ -642,8 +643,9 @@
             margin-left: 0 !important;
        
         }
-        nav{
-            margin-top: 30px;
+        #hotel{
+            padding-top: 30px;
+          
            
     
         }
