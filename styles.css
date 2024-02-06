@@ -21,6 +21,11 @@
         text-decoration: none;
         list-style: none;
     }
+
+    body{
+        width: 100%;
+        height: auto;
+    }
     
     .header{
     
@@ -32,6 +37,7 @@
         background-repeat: no-repeat;
         min-height: 90vh;
         width: 100%;
+        background-size: cover;
         position: relative;
         z-index: 1;
        
@@ -608,7 +614,7 @@
             
         }
     }
-    @media (max-width:1406px) {
+    @media (max-width:1434px) {
         header{
             max-width: 85%;
             
