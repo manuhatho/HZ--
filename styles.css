@@ -106,9 +106,13 @@ header nav {
 
 }
 
+
+
 .nav2 {
     display: none;
 }
+
+
 
 header #hotel {
     text-align: center;
@@ -171,6 +175,7 @@ header .menu {
     align-items: center;
     padding-top: 5px;
     display: none;
+    cursor: pointer;
 }
 
 header .menu .bar,
@@ -738,19 +743,20 @@ header .menu.active .bar {
 
     }
 
-   
+
     header nav {
         display: none;
     }
 
-    header.menu.active{
+    header.active {
         background-color: var(--bleu);
     }
 
-    .nav2.active{
+    .nav2.active {
         display: block;
     }
-    .nav2{
+
+    .nav2 {
         position: absolute;
         left: 0;
         right: 0;
@@ -763,13 +769,13 @@ header .menu.active .bar {
         padding-top: 30px;
         display: none;
 
-        
-        
+
+
     }
 
 
-    .nav2  a {
-        
+    .nav2 a {
+
         font-family: "zin";
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -781,28 +787,31 @@ header .menu.active .bar {
         padding-bottom: 10px;
         text-align: center;
         transition: 0.25s ease;
-        z-index: 1; 
-     
-       
+        z-index: 1;
+
+
 
     }
-    .nav2  a:hover{
+
+    .nav2 a:hover {
         transition: 0.25s ease;
         color: var(--beige);
     }
-    
-    .header{
+
+    .header {
         min-height: 50vh;
     }
-    .blend{
+
+    .blend {
         min-height: 50vh;
     }
+
     .header .booking {
 
         margin-top: 200px !important;
     }
 
-    header .menu{
+    header .menu {
         display: block !important;
         position: absolute;
         right: 80px;
@@ -825,26 +834,28 @@ header .menu.active .bar {
 
 /* md */
 @media (max-width:790px) {
-    
+
     header {
         display: flex;
         flex-direction: column;
-         padding-top: 20px;
-         height: 170px;
+        padding-top: 20px;
+        height: 170px;
 
-        
+
     }
-    header #hotel{
+
+    header #hotel {
         scale: 0.8;
     }
-    .header .booking{
+
+    .header .booking {
         display: none;
     }
-    header .menu {
-       display: none !important;
-        
-    }
-    .nav2 .menu2 {
+
+
+
+    .menu {
+        display: block !important;
         width: 60px;
         height: 60px;
         background-color: var(--beige);
@@ -855,47 +866,32 @@ header .menu.active .bar {
         align-items: center;
         padding-top: 5px;
         margin: 0 auto;
-        left: 0;
-        right: 0;
-        bottom: -25px;
+        left: 0 !important;
+        right: 0 !important;
+        top: 130px !important;
+        position: absolute !important;
+        z-index: 2 !important;
 
+    }
+
+    .menu.active {
         position: absolute;
-        
+        top: 564px !important;
+        z-index: 2;
+
     }
-    
-    .nav2 .menu2 .bar,
-    .nav2 .menu2::after,
-    .nav2 .menu2::before {
-        content: '';
-        width: 20px;
-        height: 3px;
-        background-color: var(--bleu);
-        display: block;
-        margin-bottom: 4px;
-        border-radius: 10px;
-        transition: 0.25s ease;
+
+   
+
+    .nav2 {
+        padding-top: 0;
     }
-    
-    .nav2 .menu2::after {
-        transform: rotate(45deg) translate(-5px, -5px);
-        transition: 0.25s ease;
-    }
-    
-    .nav2 .menu2::before {
-        transform: rotate(-45deg) translate(-5px, 5px);
-        transition: 0.25s ease;
-    }
-    
-    .nav2 .menu2 .bar {
-        opacity: 0;
-    }
-   .nav2{
-    padding-top: 0;
-   }
-    .section-1{
+
+    .section-1 {
         padding-top: 100px;
     }
-    .section-1 .boxes{
+
+    .section-1 .boxes {
         display: flex;
         flex-direction: column;
         position: relative;
