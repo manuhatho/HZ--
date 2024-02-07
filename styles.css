@@ -753,7 +753,10 @@ header .menu.active .bar {
     }
 
     .nav2.active {
-        display: block;
+        transition:  0.3s ease;
+        transform: translateY(0);
+        z-index: 1;
+        opacity: 1;
     }
 
     .nav2 {
@@ -765,13 +768,17 @@ header .menu.active .bar {
         height: 425px;
         background-color: var(--bleu);
         display: block;
-        z-index: 1;
         padding-top: 30px;
-        display: none;
+        transition:0.3s ease;
+        transition-behavior: smooth;
+        transform: translateY(-300px);
+      
+        opacity: 0;
 
 
 
     }
+
 
 
     .nav2 a {
@@ -786,7 +793,6 @@ header .menu.active .bar {
         padding-top: 20px;
         padding-bottom: 10px;
         text-align: center;
-        transition: 0.25s ease;
         z-index: 1;
 
 
