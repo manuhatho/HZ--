@@ -743,7 +743,7 @@ header .menu.active .bar {
         display: none;
     }
 
-    header{
+    header.menu.active{
         background-color: var(--bleu);
     }
 
