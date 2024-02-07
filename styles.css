@@ -834,6 +834,10 @@ header .menu.active .bar {
 
 /* md */
 @media (max-width:790px) {
+        h1{
+            font-size: 2.5rem !important;
+        }
+      
 
     header {
         display: flex;
@@ -848,9 +852,7 @@ header .menu.active .bar {
         scale: 0.8;
     }
 
-    .header .booking {
-        display: none;
-    }
+ 
 
 
 
