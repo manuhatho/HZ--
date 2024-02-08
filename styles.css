@@ -303,6 +303,10 @@ header .menu.active .bar {
     position: relative;
 
 }
+.header .hero #label2 {
+    position: relative;
+
+}
 
 .header .hero label input {
     background-color: var(--bleu);
@@ -329,6 +333,14 @@ header .menu.active .bar {
 }
 
 .header .hero label .fa-calendar {
+    position: absolute;
+    right: 15px;
+    top: 1px;
+    scale: 0.8;
+
+
+}
+.header .hero #label2 #fa {
     position: absolute;
     right: 15px;
     top: 1px;
@@ -731,6 +743,7 @@ header .menu.active .bar {
     header {
         display: flex;
         position: relative;
+        background-color: transparent;
 
 
 
@@ -750,10 +763,14 @@ header .menu.active .bar {
 
     header.active {
         background-color: var(--bleu);
+      
+       
+        
     }
+   
 
     .nav2.active {
-        transition:  0.3s ease;
+        transition:  0.25s ease;
         transform: translateY(0);
         z-index: 1;
         opacity: 1;
@@ -769,10 +786,9 @@ header .menu.active .bar {
         background-color: var(--bleu);
         display: block;
         padding-top: 30px;
-        transition:0.3s ease;
+        transform: translateY(500px);
+        transition:0.25s ease;
         transition-behavior: smooth;
-        transform: translateY(-300px);
-      
         opacity: 0;
 
 
@@ -917,6 +933,12 @@ header .menu.active .bar {
     }
 }
 
+@media (max-width:734px) {
+    .header .booking input[type="submit"]{
+        margin-top: 12px;
+        
+    }
+}
 @media (max-width:768px) {}
 
 /* sm */
@@ -924,3 +946,21 @@ header .menu.active .bar {
 
 /* xm */
 @media (max-width:475px) {}
+
+@media (max-width:409px) {
+    .header .booking select, .header .booking input[type="text"]{
+        margin-top: 12px;
+        
+    }
+}
+@media (max-width:271px) {
+    .header .hero #label2 #fa {
+        position: absolute;
+        right: 12px;
+        top: 53px;
+        scale: 0.8;
+        z-index: 1;
+    
+    
+    }
+}
