@@ -46,15 +46,19 @@ body {
 }
 
 html {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
 
 }
 
 body {
+   
     background-color: #f0f0f0;
+    overflow-x: hidden !important;
 
 }
+
+
 
 body::-webkit-scrollbar {
     width: 3px;
@@ -945,7 +949,15 @@ header .menu.active .bar {
 @media (max-width:640px) {}
 
 /* xm */
-@media (max-width:475px) {}
+@media (max-width:475px) {
+    .header .hero h1{
+        font-size: 2rem !important;
+       
+    }
+    body{
+        font-size: 14px !important;
+    }
+}
 
 @media (max-width:409px) {
     .header .booking select, .header .booking input[type="text"]{
