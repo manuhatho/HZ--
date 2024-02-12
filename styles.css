@@ -595,6 +595,9 @@ header .menu.active .bar {
 
 .section-2 .content {
     text-align: center;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
 
 }
 
@@ -636,6 +639,7 @@ header .menu.active .bar {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+   
 
 }
 
@@ -1212,6 +1216,18 @@ footer .bottom .content-2 .lien a{
 }
 
 /* lg  */
+@media (max-width:1179px) {
+    .section-4 .content .left::before {
+       display: none;
+    
+    }
+    .section-4 .content .bottom{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+}
 @media (max-width:1024px) {}
 
 /* md */
@@ -1305,11 +1321,41 @@ footer .bottom .content-2 .lien a{
 /* sm */
 @media (max-width:640px) {}
 
+@media (max-width:623px) {
+   
+    .section-4{
+        background: url(./ndop.jpg);
+       background-size: contain;
+       padding-bottom: 100px;
+       position: relative;
+       bottom: 600px;
+    }
+    .section-4 .content #reverse {
+        display: flex;
+        flex-direction: column;
+      }
+    .section-4 .content .box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* xm */
 @media (max-width:475px) {
     .header .hero h1 {
         font-size: 2rem !important;
 
+    }
+    .section-2 .facilities .boxes{
+        width: 100%;
+        max-width: 100% !important;
+        padding: 0;
+    }
+    .section-2 .content p {
+        margin-bottom: 50px;
+    }
+    .section-2 .facilities .boxes .img{
+        margin: 0;
     }
 
     body {
