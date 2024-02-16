@@ -1144,7 +1144,7 @@ footer .bottom .content-2 .lien a{
         z-index: -1;
     }
     .section-4.active{
-        z-index: 1;
+        z-index: -1;
     }
 
     .section-1.actives{
@@ -1154,7 +1154,7 @@ footer .bottom .content-2 .lien a{
         z-index: -1;
     }
     .section-4.actives{
-        z-index: 1;
+        z-index: -1;
     }
     
     .nav2.active {
@@ -1177,15 +1177,21 @@ footer .bottom .content-2 .lien a{
         margin: 0 auto;
         height: 425px;
         background-color: var(--bleu);
+
         display: block;
         padding-top: 30px;
         transform: translateY(500px);
        
         opacity: 0;
         z-index: -1;
+        overflow-y: scroll !important;
 
 
 
+    }
+    .nav2::-webkit-scrollbar{
+        width: 0;
+        
     }
 
 
