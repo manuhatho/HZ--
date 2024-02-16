@@ -237,6 +237,7 @@ header .menu.active .bar {
     font-size: 3.5rem;
     font-weight: lighter;
     text-transform: capitalize;
+    
 }
 
 .header .hero h2 {
@@ -246,6 +247,7 @@ header .menu.active .bar {
     width: 100%;
     max-width: 180px;
     margin: 0 auto;
+    margin-top: 20px;
 
 
 
