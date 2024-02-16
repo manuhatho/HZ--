@@ -403,6 +403,7 @@ header .menu.active .bar {
 
 }
 
+
 .section-1 .rooms {
     width: 100%;
 
@@ -791,8 +792,9 @@ header .menu.active .bar {
 .section-3 .top h4 {
     text-transform: uppercase;
     font-size: 1.3rem;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     letter-spacing: 1px;
+  
 }
 
 .section-3  .top h1 {
@@ -867,6 +869,7 @@ header .menu.active .bar {
 
 .section-4 .content .box .details h2 {
     margin-bottom: 10px;
+   
 }
 
 .section-4 .content .box .details p {
@@ -1127,17 +1130,43 @@ footer .bottom .content-2 .lien a{
 
     header.active {
         background-color: var(--bleu);
-
+        position: fixed;
+        top: 0;
+        z-index: 2;
 
 
     }
 
+    .section-1.active{
+        z-index: -1;
+    }
+    .section-3.active{
+        z-index: -1;
+    }
+    .section-4.active{
+        z-index: 1;
+    }
 
+    .section-1.actives{
+        z-index: -1;
+    }
+    .section-3.actives{
+        z-index: -1;
+    }
+    .section-4.actives{
+        z-index: 1;
+    }
+    
     .nav2.active {
+       position: fixed;
         transition: 0.25s ease;
+        top: 170px;
+        transition-behavior: smooth;
         transform: translateY(0);
         z-index: 1;
         opacity: 1;
+      
+
     }
 
     .nav2 {
@@ -1151,9 +1180,9 @@ footer .bottom .content-2 .lien a{
         display: block;
         padding-top: 30px;
         transform: translateY(500px);
-        transition: 0.25s ease;
-        transition-behavior: smooth;
+       
         opacity: 0;
+        z-index: -1;
 
 
 
@@ -1197,12 +1226,20 @@ footer .bottom .content-2 .lien a{
         margin-top: 200px !important;
     }
 
+    header .menu.actives{
+        position: fixed !important;
+       
+        
+        
+
+    }
     header .menu {
         display: block !important;
         position: absolute;
         right: 80px;
         top: 160px;
         z-index: 1;
+      
     }
 
     header .menu .bar,
@@ -1211,6 +1248,48 @@ footer .bottom .content-2 .lien a{
         position: relative;
         right: -20px;
         top: 15px;
+    }
+
+    .menu2.active{
+        display: none;
+    }
+
+     .menu2 {
+        width: 60px;
+        height: 60px;
+        background-color: var(--beige);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        cursor: pointer;
+        position: fixed;
+
+        right: 6px;
+        margin: 0 auto;
+        z-index: 2;
+        opacity: 0.6;
+        transition: 0.25s ease;
+    }
+    
+    .menu2:hover{
+        opacity: 1;
+        transition: 0.25s ease;
+    }
+    
+     .menu2 .bar,
+     .menu2::after,
+     .menu2::before {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background-color: var(--bleu);
+        display: block;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        transition: 0.25s ease;
     }
 
 }
