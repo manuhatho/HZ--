@@ -30,7 +30,8 @@ body {
 
 .header {
 
-    background: url(./hero.jpg);
+
+    background: url(./20230404_201523.jpg);
 
     background-color: rgba(0, 0, 0, 0.558);
     background-blend-mode: multiply;
@@ -95,7 +96,6 @@ header {
 .blend {
     position: absolute;
     height: 100%;
-    min-height: 120vh;
     width: 100%;
     background-color: rgba(3, 25, 44, 0.411);
     z-index: -1;
