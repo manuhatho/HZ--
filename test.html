@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(to left top, #031A9A, #8B53FF);
+        padding: 0 30px;
+     
+    }
+
+     .wrapper{
+        width: 100%;
+        max-width: 1100px;
+       
+   
+        
+   
+     }
+     .wrapper .carouse1 {
+         display: grid;
+         grid-auto-flow: column;
+         grid-auto-columns: calc((100% / 3) - 12px);
+         overflow: hidden; 
+         gap: 16px;
+         cursor: pointer;
+         scroll-behavior: smooth;
+         scroll-snap-type: x mandatory;
+         scrollbar-width: none;
+         
+         
+         
+        }
+        .wrapper .carouse1::-webkit-scrollbar{
+            display: none;
+        }
+        .wrapper .carouse1.dragging{
+            scroll-behavior: auto;
+            scroll-snap-type: none;
+        }
+        .wrapper .carouse1.dragging .card{
+            cursor: grab;
+            user-select: none;
+        }
+    .carouse1 .card {
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background-color: white;
+        height: 342px; 
+        border-radius: 8px;
+        padding:10px;
+      
+       
+        
+       
+
+    }
+
+    .card .img{
+      border: 5px solid #8B53FF;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      
+    }
+    .card .img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid white;
+     
+       
+     
+    }
+    .wrapper {
+        position: relative;
+    }
+    .wrapper .slide-button{
+        position: absolute;
+        background-color: black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .wrapper .slide-button:hover{
+        background-color: rgb(107, 105, 105);
+    }
+
+    #left-button{
+      
+        left: -20px;
+    }
+    #right-button{
+        right: -20px;
+    }
+ 
+    #right{
+        position: absolute;
+        left: 19px;
+    }
+    #left{
+        position: absolute;
+        right: 19px;
+    }
+
+    @media (max-width: 900px) {
+        .wrapper .carouse1 {
+       grid-auto-columns: calc((100% / 2) - 9px);
+      
+    
+
+     }
+    }
+    @media (max-width: 600px) {
+        .wrapper .carouse1 {
+       grid-auto-columns:100%;
+      
+    
+
+     }
+    }
+
+
+
+</style>
+<body>
+    <div class="wrapper">
+        <div id="left-button" class="slide-button">
+            <img id="left" src="./arrow-left.png" height="10" alt="">
+        </div>
+        <ul class="carouse1">
+            <li class="card">
+            <div class="img"><img src="./1w.jpg" alt="" draggable="false"></div>
+            </li>
+            <li class="card">
+            <div class="img"><img src="./2w.jpg" alt="" draggable="false"></div>
+            </li>
+            <li class="card">
+            <div class="img"><img src="./3w.jpg" alt="" draggable="false"></div>
+            </li>
+            <li class="card">
+            <div class="img"><img src="./1.jpg" alt="" draggable="false"></div>
+            </li>
+            <li class="card">
+            <div class="img"><img src="./3.jpg" alt="" draggable="false"></div>
+            </li>
+            <li class="card">
+            <div class="img"><img src="./3.jpg" alt="" draggable="false"></div>
+            </li>
+        </ul>
+            <div id="right-button" class="slide-button">
+                <img id="right" src="./arrow-right.png" height="10" alt="">
+            </div>
+    </div>
+
+
+
+</body>
+
+<script>
+   const carouse1 = document.querySelector('.carouse1');
+   const arrowBtns = document.querySelectorAll('.wrapper .slide-button');
+   const firstCardWidth = carouse1.querySelector('.card').offsetWidth;
+
+   let isDragging = false, startX, startScrollLeft;
+
+   // Add event Listeners for the arrow buttons to scroll the carousel left and right
+   arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+       carouse1.scrollLeft += btn.id === "left-button" ? -firstCardWidth : firstCardWidth;
+    })
+   })
+
+   const dragStart = (e) => {
+    isDragging = true;
+    carouse1.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+    startX = e.pageX;
+    startScrollLeft = carouse1.scrollLeft;
+   }
+
+   const dragging = (e) => {
+
+    if(!isDragging) return;  // if isDragging is false return from here
+    // Updates the scroll postion of the carousel based on the cursor movement
+    carouse1.scrollLeft = startScrollLeft - (e.pageX - startX);
+   }
+
+   const dragStopt = () => {
+    isDragging = false;
+    carouse1.classList.remove("dragging");
+   }
+
+   carouse1.addEventListener("mousedown", dragStart);
+   carouse1.addEventListener("mouseup", dragStopt);
+   carouse1.addEventListener("mousemove", dragging);
+</script>
+</html>

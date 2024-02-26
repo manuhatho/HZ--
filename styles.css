@@ -55,6 +55,7 @@ html {
 body {
 
     background-color: #f0f0f0;
+    
     overflow-x: hidden;
 
 
@@ -407,26 +408,90 @@ header .menu.active .bar {
 
 
 .section-1 .rooms {
+    position: relative;
     width: 100%;
+    max-width:  1100px;
+    margin: 0 auto;   
 
+  
+   
+    
 }
-
-.section-1 .rooms .boxes {
-
+.section-1 .rooms .arrow-scroll{
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 94%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(50%);
+    
+    
+}
 
-    margin: 0 auto;
+.section-1 .rooms .arrow-scroll:hover{
+    background-color: rgb(88, 87, 87) !important;
+}
 
+.section-1 .rooms  .left{
+
+    left: -20px;
+   
+   
+}
+.section-1 .rooms  .right{
+
+    right: -20px;
+    
+   
+   
+}
+
+.section-1 .rooms #prev_slide{
+    height: 25px;
+    position: absolute;
+    left: 15px;
+}
+.section-1 .rooms #next_slide{
+    height: 25px;
+    position: absolute;
+    right: 15px;
+}
+
+.section-1 .rooms .boxes {
+  
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: calc((100% / 3) - 12px);
+   gap: 16px;
+    overflow-x:hidden;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 
 
 }
+.rooms .boxes::-webkit-scrollbar{
+    display: none;
 
+}
+.rooms .boxes.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+.rooms .boxes.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
 .section-1 .rooms .boxes .box {
-    margin: 0 30px;
+    scroll-snap-align: start;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -434,15 +499,16 @@ header .menu.active .bar {
     align-items: center;
     text-align: center;
     background: url(./ndop.jpg);
-    width: 400px;
-    height: auto;
+    width: 100%;
+   max-width: 600px;
+    height: 100%;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.837);
 
 }
 
 .section-1 .rooms .boxes .img {
+
     width: 100%;
-    max-width: 400px;
     height: 400px;
 
 }
@@ -885,6 +951,9 @@ header .menu.active .bar {
     font-weight: bold;
     transition: 0.25s ease;
     position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
 
 
 }
@@ -1334,6 +1403,22 @@ footer .bottom .content-2 .lien a{
     }
 }
 @media (max-width:1024px) {}
+
+
+@media (max-width:900px) {
+    .section-1 .rooms .boxes {
+        grid-auto-columns: calc((100% / 2) - 9px);
+  
+     
+     }
+}
+@media (max-width:600px) {
+    .section-1 .rooms .boxes {
+        grid-auto-columns: 100%;
+  
+     
+     }
+}
 
 /* md */
 @media (max-width:790px) {

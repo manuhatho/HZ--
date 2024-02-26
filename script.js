@@ -74,3 +74,45 @@ function scrollMenuVisibility(){
 }
 scrollMenuVisibility();
 
+function  initSlider () {
+    const boxes = document.querySelector('.boxes');
+    const arrowBtns = document.querySelectorAll('.rooms .arrow-scroll');
+    const firstCardWidth = boxes.querySelector('.box').offsetWidth;
+ 
+    let isDragging = false, startX, startScrollLeft;
+ 
+    // Add event Listeners for the arrow buttons to scroll the carousel left and right
+    arrowBtns.forEach(btn => {
+     btn.addEventListener("click", () => {
+        boxes.scrollLeft += btn.id === "previous" ? -firstCardWidth : firstCardWidth;
+     })
+    })
+ 
+    const dragStart = (e) => {
+     isDragging = true;
+     boxes.classList.add("dragging");
+     // Records the initial cursor and scroll position of the carousel
+     startX = e.pageX;
+     startScrollLeft = boxes.scrollLeft;
+    }
+ 
+    const dragging = (e) => {
+ 
+     if(!isDragging) return;  // if isDragging is false return from here
+     // Updates the scroll postion of the carousel based on the cursor movement
+     boxes.scrollLeft = startScrollLeft - (e.pageX - startX);
+    }
+ 
+    const dragStopt = () => {
+     isDragging = false;
+     boxes.classList.remove("dragging");
+    }
+ 
+    boxes.addEventListener("mousedown", dragStart);
+    boxes.addEventListener("mouseup", dragStopt);
+    boxes.addEventListener("mousemove", dragging);
+}
+initSlider();
+
+
+
