@@ -486,7 +486,7 @@ header .menu.active .bar {
     scroll-behavior: auto;
     scroll-snap-type: none;
 }
-.rooms .boxes.dragging .card{
+.rooms .boxes.dragging .box{
     cursor: grab;
     user-select: none;
 }
