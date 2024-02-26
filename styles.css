@@ -429,12 +429,16 @@ header .menu.active .bar {
     cursor: pointer;
     top: 50%;
     transform: translateY(50%);
-    
-    
+    transition: 0.4s ease;    
 }
 
 .section-1 .rooms .arrow-scroll:hover{
     background-color: rgb(88, 87, 87) !important;
+    transition: 0.4s ease;   
+}
+.section-1 .rooms .arrow-scroll:active{
+    transition: 0.4s ease;   
+    scale: 0.8;
 }
 
 .section-1 .rooms  .left{
