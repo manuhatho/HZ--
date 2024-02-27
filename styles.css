@@ -668,7 +668,17 @@ header .menu.active .bar {
     min-height: 100vh;
     font-family: "zin";
     padding-top: 100px;
+    background: url(./pannier-perle-fondation-gacha-4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
 
+
+.section-2:hover{
+    background-color: rgba(0, 0, 0, 0.444);
+    background-blend-mode: multiply;
+    transition: 0.4s cubic-bezier(.45,.05,.55,.95);
 }
 
 .section-2 .content {
@@ -682,13 +692,14 @@ header .menu.active .bar {
 .section-2 h5 {
     font-size: 1.3rem;
     text-transform: uppercase;
-    color: var(--bleu);
+    color: var(--beige);
 
 }
 
 .section-2 h1 {
     font-size: 3rem;
     font-weight: lighter;
+    color: white;
 }
 
 .section-2 .content h5 {
@@ -705,7 +716,11 @@ header .menu.active .bar {
    max-width: 800px;
    margin: 0 auto;
     line-height: 25px;
-    color: var(--bleu);
+    color: white;
+}
+
+.section-2 .facilities{
+   
 }
 
 .section-2 .facilities .boxes {
@@ -832,7 +847,7 @@ header .menu.active .bar {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.532);
+    background-color: rgba(0, 0, 0, 0.582);
     background-blend-mode: multiply;
     position: relative;
     width: 100%;
