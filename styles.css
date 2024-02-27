@@ -527,7 +527,9 @@ header .menu.active .bar {
 
 .section-1 .rooms .boxes .details {
     background-color: var(--bleu);
-    padding: 30px;
+    padding: 30px 20px;
+    height: 360px;
+
 
 }
 
@@ -542,6 +544,7 @@ header .menu.active .bar {
     font-size: 1.8rem;
     color: white;
     letter-spacing: 1px;
+
 }
 
 .section-1 .rooms .boxes .details h2 {
@@ -551,6 +554,11 @@ header .menu.active .bar {
 
 .section-1 .rooms .boxes .details p {
     color: white;
+    letter-spacing: 1px;
+    text-align:left;
+  
+    
+    
 }
 
 .section-1 .disc {
@@ -637,6 +645,7 @@ header .menu.active .bar {
     max-width: 650px;
     line-height: 30px;
     color: var(--bleu);
+    
 }
 
 .section-1 button {
@@ -844,7 +853,7 @@ padding: 20px;
 }
 
 .section-2 .facilities .box p {
-
+    letter-spacing: 1px;
     color: var(--beige);
 }
 
