@@ -557,7 +557,7 @@ input[type=number] {
 .section-1 .rooms .boxes .details {
     background-color: var(--bleu);
     padding: 30px 20px;
-    height: 360px;
+    height: 300px;
 
 
 }
@@ -582,10 +582,12 @@ input[type=number] {
 }
 
 .section-1 .rooms .boxes .details p {
-    color: white;
+    color:var(--bleu);
     letter-spacing: 1px;
     text-align:left;
-  
+    background-color: white;
+  padding: 10px;
+  border-radius: 10px;
     
     
 }
@@ -1725,6 +1727,15 @@ header #right.active{
      
 }
 @media (max-width:1024px) {}
+@media (max-width:936px) {
+    .section-1 .rooms .boxes .details {
+      
+        height: 400px;
+    
+    
+    }
+    
+}
 
 
 @media (max-width:900px) {
@@ -1733,6 +1744,13 @@ header #right.active{
   
      
      }
+
+     .section-1 .rooms .boxes .details {
+        
+        height: 260px;
+    
+    
+    }
 }
 @media (max-width:600px) {
     .section-1 .rooms .boxes {
