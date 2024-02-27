@@ -121,3 +121,24 @@ initSlider();
 
 
 
+    function arrowTop(){
+
+        const arrowUp = document.querySelector(".arrow-up");
+
+        arrowUp.addEventListener('click', ()=>{
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        document.addEventListener("scroll", ()=>{
+            if(window.scrollY > 1000){
+                arrowUp.classList.add("active")
+            } else {
+                arrowUp.classList.remove("active")
+            }
+        })
+    }
+
+    arrowTop();
