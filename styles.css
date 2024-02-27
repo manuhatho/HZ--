@@ -674,7 +674,6 @@ header .menu.active .bar {
     background-color: white;
     position: relative;
     bottom: 80px;
-    min-height: 100vh;
     font-family: "zin";
     padding-top: 100px;
     background: url(./pannier-perle-fondation-gacha-4.png);
@@ -695,9 +694,10 @@ header .menu.active .bar {
 .section-2 .content {
     text-align: center;
     width: 100%;
-    /* max-width: 90%; */
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.478);
+    /* background-color: rgba(0, 0, 0, 0.478); */
+    /* background-color: rgba(16, 15, 40, 0.647); */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(23, 22, 55, 1) 70%);
 padding: 20px;
 
 }
@@ -742,7 +742,7 @@ padding: 20px;
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -757,7 +757,8 @@ padding: 20px;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    margin: 15px;
+    margin: 0 15px;
+    margin-bottom: 15px;
 
 
 }
@@ -812,7 +813,27 @@ padding: 20px;
 
 .section-2 .facilities #img4 {
 
-    background: url(./4w.jpg);
+    background: url(./4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.section-2 .facilities #img5 {
+
+    background: url(./5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.section-2 .facilities #img6 {
+
+    background: url(./5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
