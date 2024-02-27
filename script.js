@@ -4,6 +4,8 @@
     const menu = document.querySelector(".menu");
     const menuLink = document.querySelectorAll("#link_menu");
     const nav = document.querySelector(".nav2");
+    const navLeft = document.getElementById("left");
+    const navRight = document.getElementById("right");
     const header = document.querySelector("header");
     const sect1 = document.querySelector(".section-1");
     const sect3 = document.querySelector(".section-3");
@@ -19,6 +21,9 @@
             sect1.classList.toggle("active");
             sect3.classList.toggle("active");
             sect4.classList.toggle("active");
+            navLeft.classList.toggle("active");
+            navRight.classList.toggle("active");
+
          
         })
     })

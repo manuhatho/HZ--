@@ -671,12 +671,14 @@ header .menu.active .bar {
     background: url(./pannier-perle-fondation-gacha-4.png);
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgba(0, 0, 0, 0.31);
+    background-blend-mode: multiply;
  
 }
 
 
 .section-2:hover{
-    background-color: rgba(0, 0, 0, 0.444);
+    background-color: rgba(0, 0, 0, 0.559);
     background-blend-mode: multiply;
     transition: 0.4s cubic-bezier(.45,.05,.55,.95);
 }
@@ -684,8 +686,10 @@ header .menu.active .bar {
 .section-2 .content {
     text-align: center;
     width: 100%;
-    max-width: 90%;
+    /* max-width: 90%; */
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.478);
+padding: 20px;
 
 }
 
@@ -716,7 +720,9 @@ header .menu.active .bar {
    max-width: 800px;
    margin: 0 auto;
     line-height: 25px;
-    color: white;
+    color:var(--beige);
+    letter-spacing: 1px;
+  
 }
 
 .section-2 .facilities{
@@ -1174,6 +1180,185 @@ footer .bottom .content-2 .lien a{
     
 }
 
+header.active {
+    background-color: var(--bleu);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+
+}
+
+.section-1.active{
+    z-index: -1;
+}
+.section-3.active{
+    z-index: -1;
+}
+.section-4.active{
+    z-index: -1;
+}
+
+.section-1.actives{
+    z-index: -1;
+}
+.section-3.actives{
+    z-index: -1;
+}
+.section-4.actives{
+    z-index: -1;
+}
+
+.nav2.active {
+   position: fixed;
+    transition: 0.25s ease;
+    top: 170px;
+    transition-behavior: smooth;
+    transform: translateY(0);
+    z-index: 1;
+    opacity: 1;
+  
+
+}
+
+.nav2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 425px;
+    background-color: var(--bleu);
+
+    display: block;
+    padding-top: 30px;
+    transform: translateY(500px);
+   
+    opacity: 0;
+    z-index: -1;
+    overflow-y: scroll !important;
+
+
+
+}
+.nav2::-webkit-scrollbar{
+    width: 0;
+    
+}
+
+
+
+.nav2 a {
+
+    font-family: "zin";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+
+
+
+}
+
+.nav2 a:hover {
+    transition: 0.25s ease;
+    color: var(--beige);
+}
+
+.header {
+    min-height: 50vh;
+}
+
+.blend {
+    min-height: 50vh;
+}
+
+.header .booking {
+
+    margin-top: 200px !important;
+}
+
+header .menu.actives{
+    position: fixed !important;
+   
+    
+    
+
+}
+header .menu.active{
+    display: block !important;
+}
+header .menu {
+  
+    position: absolute;
+    right: 80px;
+    top: 160px;
+    z-index: 1;
+  
+}
+
+header .menu .bar,
+header .menu::before,
+header .menu::after {
+    position: relative;
+    right: -20px;
+    top: 15px;
+}
+
+.menu2.active{
+    display: none;
+}
+
+ .menu2 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--beige);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    cursor: pointer;
+    position: fixed;
+
+    right: 6px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0.6;
+    transition: 0.25s ease;
+}
+
+.menu2:hover{
+    opacity: 1;
+    transition: 0.25s ease;
+}
+
+ .menu2 .bar,
+ .menu2::after,
+ .menu2::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: var(--bleu);
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+ header #left.active{
+    display: none;
+}
+header #right.active{
+    display: none;
+}
 
 
 /* ------------------------------------RESPONSIVE ACCUEIL-------------------------------------------------- */
