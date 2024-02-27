@@ -432,13 +432,12 @@ header .menu.active .bar {
     transition: 0.4s ease;    
 }
 
-.section-1 .rooms .arrow-scroll:hover{
-    background-color: rgb(88, 87, 87) !important;
-    transition: 0.4s ease;   
-}
+
 .section-1 .rooms .arrow-scroll:active{
     transition: 0.4s ease;   
     scale: 0.8;
+    background-color: rgb(88, 87, 87) !important;
+    transition: 0.4s ease;  
 }
 
 .section-1 .rooms  .left{
@@ -817,7 +816,11 @@ header .menu.active .bar {
 
 }
 
-.section-2 .facilities .box h2 {}
+.section-2 .facilities .box h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
 
 .section-2 .facilities .box p {
 
