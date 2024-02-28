@@ -1191,13 +1191,13 @@ header .menu::after {
 @media (max-width:475px) {
     .header .hero h1 {
         font-size: 2rem !important;
-
+        
     }
  
     body {
         font-size: 14px !important;
     }
-
+    
     footer .top .content-1{
         width: 100%;
         max-width: 100%;
@@ -1209,11 +1209,17 @@ header .menu::after {
         padding: 50px 0;
     }
     }
-  
+    
+    
+    @media (max-width:386px) {
 
-
-
-
+        .reservation form{
+            padding: 30px 0;
+        }
+    }
+    
+    
+    
 @media (max-width:271px) {
     .header .hero #label2 #fa {
         position: absolute;
