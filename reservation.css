@@ -363,7 +363,7 @@ background-repeat: no-repeat;
 }
 .reservation form label i{
     position: absolute;
-    right: 8px;
+    right: 0;
     bottom: 0;
 }
 
@@ -379,7 +379,7 @@ background-repeat: no-repeat;
 }
 .reservation form .style::placeholder{
     text-transform: uppercase;
-    opacity: 1;
+    opacity: 1 !important;
     /* text-align: center; */
     letter-spacing: 1px;
     font-weight: bold;
