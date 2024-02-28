@@ -225,6 +225,7 @@ header .menu {
     padding-top: 5px;
     display: none;
     cursor: pointer;
+  
 }
 
 header .menu .bar,
@@ -779,8 +780,9 @@ header .menu {
   
     position: absolute;
     right: 80px;
-    top: 160px;
+    top: 160px !important;
     z-index: 1;
+    
   
 }
 
