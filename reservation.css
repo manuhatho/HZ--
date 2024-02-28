@@ -313,8 +313,48 @@ header .menu.active .bar {
 }
 
 main{
+background: url(./background.png);
+background-size: cover;
+background-repeat: no-repeat;
+padding: 200px 0;
 
-padding-bottom: 300px;
+
+
+}
+
+.reservation{
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+   
+    
+    
+}
+.reservation:hover{
+    box-shadow: 1px 1px 10px 2px  rgba(0, 0, 0, 0.298);
+    transition: 0.4s ease;
+}
+.reservation form{
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-color: var(--beige);
+    padding: 30px 50px;
+    /* border: 1px solid var(--bleu); */
+    text-align: center;
+
+    
+    
+}
+.reservation form h2{
+    text-align: center;
+    font-family: "zin";
+   margin-bottom: 50px;
+   color: var(--bleu);
 }
 
 .reservation form label{
@@ -322,21 +362,21 @@ padding-bottom: 300px;
 }
 .reservation form label i{
     position: absolute;
-    right: 4px;
+    right: 8px;
     bottom: 0;
 }
 
-.reservation form input{
+.reservation form .style{
     width: 100%;
- 
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--bleu);
     padding: 5px 12px;
     outline: none;
     caret-color: transparent;
+    margin:  20px 0;
 }
-.reservation form input::placeholder{
+.reservation form .style::placeholder{
     text-transform: uppercase;
     opacity: 1;
     text-align: center;
@@ -344,17 +384,51 @@ padding-bottom: 300px;
     font-weight: bold;
   
 }
-
-
-.reservation{
-    margin-top: 100px !important;
+.reservation select{
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center !important;
+    letter-spacing: 1px;
+    font-weight: bold;
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--bleu);
+    padding: 5px 12px;
+    outline: none;
+    caret-color: transparent;
+    margin:  20px 0;
 
+  
 }
+
+input[type="submit"]{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--bleu);
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.2s ease;
+}
+input[type="submit"]:hover{
+    border: 1px solid var(--bleu);
+    background-color: transparent;
+    color: black;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+
 
 .reservation .img{
     height: 600px;
@@ -366,16 +440,7 @@ padding-bottom: 300px;
     object-fit: cover;
 
 }
-.reservation form{
-    width: 100%;
-    max-width: 800px;
-    height: 600px;
-    background-color: var(--beige);
-    padding: 30px 50px;
 
-   
-   
-}
 
 .arrow-up{
     position: fixed;
@@ -734,13 +799,19 @@ header .menu::after {
     transition: 0.25s ease;
 }
 
- header #left.active{
-    display: none;
+ .header #left.active{
+     display: none;
+ 
+    }
+
     
-}
-header #right.active{
+    
+
+.header #right.active{
     display: none;
 }
+
+
 
 
 /* ------------------------------------RESPONSIVE ACCUEIL-------------------------------------------------- */
@@ -985,63 +1056,23 @@ header #right.active{
 }
 
 /* lg  */
-@media (max-width:1179px) {
-    .section-4 .content .left::before {
-       display: none;
+
+@media (max-width:902px) {
+    .reservation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     
     }
-    .section-4 .content .bottom{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-    }
-}
-@media (max-width:1090px) {
-    .section-1 .rooms .left {
-        left: 10%;
-        z-index: 99;
-       
-      }
-    .section-1 .rooms .right {
-        right: 10%;
-        z-index: 99;
-       
-      }
-      .section-1 .rooms .arrow-scroll {
-        position: absolute;
-        background-color: black;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        top: 96%;
-        transform: translateY(96%);
-      }
-     
-}
-@media (max-width:1024px) {}
-
-
-@media (max-width:900px) {
-    .section-1 .rooms .boxes {
-        grid-auto-columns: calc((100% / 2) - 9px);
-  
-     
-     }
-}
-@media (max-width:600px) {
-    .section-1 .rooms .boxes {
-        grid-auto-columns: 100%;
-  
-     
-     }
 }
 
 /* md */
+@media (max-width:776px) {
+   main{
+    padding:0 0 150px 0;
+   }
+}
 @media (max-width:790px) {
     h1 {
         font-size: 2.5rem !important;
@@ -1098,16 +1129,7 @@ header #right.active{
         padding-top: 0;
     }
 
-    .section-1 {
-        padding-top: 100px;
-    }
-
-    .section-1 .boxes {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        bottom: 50px;
-    }
+   
 
     header #hotel {
         margin-left: 40px;
@@ -1120,12 +1142,6 @@ header #right.active{
     }
 }
 
-@media (max-width:734px) {
-    .header .booking input[type="submit"] {
-        margin-top: 12px;
-
-    }
-}
 
 @media (max-width:768px) {}
 
@@ -1134,21 +1150,7 @@ header #right.active{
 
 @media (max-width:623px) {
    
-    .section-4{
-        background: url(./ndop.jpg);
-       background-size: contain;
-       padding-bottom: 100px;
-       position: relative;
-       bottom: 600px;
-    }
-    .section-4 .content #reverse {
-        display: flex;
-        flex-direction: column;
-      }
-    .section-4 .content .box{
-        display: flex;
-        flex-direction: column;
-    }
+
 }
 
 /* xm */
@@ -1157,19 +1159,7 @@ header #right.active{
         font-size: 2rem !important;
 
     }
-    .section-2 .facilities .boxes{
-        width: 100%;
-        max-width: 100% !important;
-        padding: 0;
-    }
-    .section-2 .content p {
-        margin-bottom: 50px;
-    }
-    .section-2 .facilities .boxes .img{
-        margin: 0;
-    }
-
-
+ 
     body {
         font-size: 14px !important;
     }
@@ -1188,14 +1178,7 @@ header #right.active{
   
 
 
-@media (max-width:409px) {
 
-    .header .booking select,
-    .header .booking input[type="text"] {
-        margin-top: 12px;
-
-    }
-}
 
 @media (max-width:271px) {
     .header .hero #label2 #fa {
