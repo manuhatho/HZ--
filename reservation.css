@@ -387,7 +387,7 @@ background-repeat: no-repeat;
 .reservation select{
     text-transform: uppercase;
     opacity: 1;
-    text-align: center !important;
+    padding-left: 323px !important;
     letter-spacing: 1px;
     font-weight: bold;
     width: 100%;
