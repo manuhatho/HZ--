@@ -306,8 +306,8 @@ header .menu.active .bar {
     width: 40px;
     background-color: white;
     display: block;
-    right: -60px;
-    bottom: 50%;
+    right: -53px;
+    bottom: 45.8%;
     transform: translateY(50%);
     border-radius: 5px;
  
