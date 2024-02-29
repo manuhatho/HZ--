@@ -1036,7 +1036,7 @@ header .menu::after {
         flex-direction: column;
         
     }
-    main .chambre .details {
+    main .chambre .details,  main .chambre #details {
         height: auto;
         
     }
