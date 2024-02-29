@@ -314,170 +314,73 @@ header .menu.active .bar {
 }
 
 main{
-background: url(./background.png);
-background-size: cover;
+background: url(./background2.png);
+background-size:cover;
 background-repeat: no-repeat;
+background-position: right;
+
 
 
 
 
 }
 
-.reservation{
-    width: 100%;
-    max-width: fit-content;
-    margin: 0 auto;
+main .chambre{
     display: flex;
-    align-items: center;
     justify-content: center;
-    transition: 0.4s ease;
-   
-    
-    
-}
-.reservation:hover{
-    box-shadow: 1px 1px 10px 2px  rgba(0, 0, 0, 0.298);
-    transition: 0.4s ease;
-}
-.reservation form{
-    width: 100%;
-    max-width: 600px;
-    height: 600px;
-    background-color: var(--beige);
-    padding: 30px 50px;
-    /* border: 1px solid var(--bleu); */
-    text-align: center;
-
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
     
 }
-.reservation form h2{
-    text-align: center;
+main .chambre h1{
+    margin-bottom: 35px;
+    margin-top: 100px;
     font-family: "zin";
-   margin-bottom: 50px;
-   color: var(--bleu);
-}
-
-.reservation form label{
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: var(--bleu);
     position: relative;
-}
-.reservation form label i{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.reservation form .style{
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--bleu);
-    padding: 5px 12px;
-    outline: none;
-    caret-color: transparent;
-    margin:  20px 0;
-}
-.reservation form .style::placeholder{
-    text-transform: uppercase;
-    opacity: 1 !important;
-    /* text-align: center; */
-    letter-spacing: 1px;
-    font-weight: bold;
-    color: black;
-  
-}
-.reservation select{
-    text-transform: uppercase;
-    opacity: 1;
-    /* padding-left: 323px !important; */
-    letter-spacing: 1px;
-    font-weight: bold;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--bleu);
-    padding: 5px 12px;
-    outline: none;
-    caret-color: transparent;
-    margin:  20px 0;
-
-  
-}
-
-
-form #rooms {
-    /* background-color: var(--bleu); */
-    background-color: transparent;
-    padding: 12px;
-    width: 100%;
-    max-width: 100px;
-    border: none;
-    margin: 0 2px;
-    color: black;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-weight: bold;
-
-}
-form input[type=number] {
-    /* -moz-appearance: textfield; */
-    outline:none;
-    margin-top: 12px !important;
-}
-#label-rooms{
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 11px;
-    font-family: 'Segoe UI';
-    border: 1px solid var(--bleu);
-    padding: 12px 5px;
-  
-}
-
-
-input[type="submit"]{
-    margin-top: 50px;
-    width: 100%;
-    max-width: 200px;
-    padding: 12px;
-    text-align: center;
-    background-color: var(--bleu);
-    border: 1px solid var(--bleu);
-  
-    cursor: pointer;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 0.2s ease;
+    user-select: none;
     
 }
-input[type="submit"]:hover{
-    border: 1px solid var(--bleu);
-    background-color: transparent;
-    color: black;
-    transition: 0.2s ease;
+
+main .chambre h1::after{
+    position: absolute;
+    content:"";
+    width: 55px;
+    height: 6px;
+    background-color: var(--bleu);
+    display: block;
+    transform: rotate(-90deg);
+    left: -45px;
+    top: 17px;
+    border-radius: 5px;
 }
-
-
-
-
-
-
-
-.reservation .img{
-    height: 600px;
-    width: 600px;
-}
-.reservation img{
+main .chambre .wrapper{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
+    max-width: 900px;
+    height: 433px;
+   display: flex;
+   
+   
+   
 }
 
+main .chambre .wrapper .carousel-1{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 16px;
+    overflow-x: hidden;
+    grid-auto-columns: 100%;
+    
+}
+main .chambre .wrapper .carousel-1 img{
+    width: 100%;
 
+}
 .arrow-up{
     position: fixed;
     right: 6px ;
@@ -487,7 +390,36 @@ input[type="submit"]:hover{
     opacity: 0.8;
     transform: translateX(300px);
     cursor: pointer;
+  
 
+}
+main .chambre .details{
+    font-family: 'Segoe UI';
+    height: 433px;
+    width: 100%;
+    max-width: 300px; 
+    background-color: var(--bleu);
+    user-select: none;
+   
+
+    
+    
+}
+
+main .chambre .details .details-content{
+    background-color: var(--beige);
+    width: 100%;
+    max-width: 300px; 
+    
+}
+main .chambre .details .details-content li{
+    border-bottom: 1px solid var(--bleu);
+}
+main .chambre .details img, main .chambre .details p{
+    display: inline-block;
+    vertical-align: middle;
+    margin:15px 3px;
+    
 }
 .arrow-up.active{
     transform: translateX(0);
@@ -1094,6 +1026,34 @@ header .menu::after {
 
 /* lg  */
 
+@media (max-width:1134px) {
+    main .chambre .wrapper{
+        display: flex;
+        flex-direction: column;
+        
+        
+        
+    }
+    main .chambre h1{
+        background-color: white;
+        padding: 12px;
+        border-radius: 0 40px 40px 0;
+    }
+    main .chambre h1::after{
+        background-color: white;
+        top: 28px;
+    }
+    main .chambre .wrapper{
+        height: auto;
+    }
+    main .chambre .wrapper .details{
+
+        max-width: 900px;
+    }
+    main .chambre .wrapper .details-content{
+        max-width: 100%;
+    }
+}
 @media (max-width:902px) {
     .reservation{
         display: flex;
@@ -1181,6 +1141,24 @@ header .menu::after {
 
 
 @media (max-width:768px) {}
+@media (max-width:714px) {
+    main .chambre h1, main .chambre h1::after{
+        scale: 0.8;
+    }
+    main .chambre h1::after{
+        top: 33px;
+    }
+}
+@media (max-width:740px) {
+    main .chambre h1{
+       width: 100%;
+       padding: 5px;
+       text-align: center;
+    }
+    .chambre h1::after{
+        top: 25px !important;
+    }
+}
 
 /* sm */
 @media (max-width:640px) {}
@@ -1214,6 +1192,25 @@ header .menu::after {
     }
     
     
+    @media (max-width:408px) {
+        main .chambre h1{
+            border-radius:0 60px 60px 0;
+            padding: 0 !important;
+        }
+        main .chambre h1::after{
+            top: 20px !important;
+        }
+    }
+
+    
+    @media (max-width:398px) {
+        main .chambre h1::after{
+          width: 100px;
+          left: -70px;
+          top: 45px !important;
+          height: 10px;
+        }
+    }
     @media (max-width:386px) {
 
         .reservation form{
@@ -1233,4 +1230,5 @@ header .menu::after {
 
 
     }
+
 }

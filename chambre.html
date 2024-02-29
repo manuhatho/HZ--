@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reservation.css">
+    <link rel="stylesheet" href="./chambre.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.min.css">
     <title>Hôtel Zingana-Reservation</title>
 </head>
@@ -24,7 +24,7 @@
                     <ul>
                         <li><a id="link1" href="./index.html">accueil</a></li>
                         <li><a id="link2" href="">à propos</a></li>
-                        <li><a id="link3" href="./chambre.html">chambres</a></li>
+                        <li id="link-6"><a id="link6" href="./chambre.html">chambres</a></li>
                         <li><a id="link4" href="">restauration</a></li>
                     </ul>
                 </nav>
@@ -35,7 +35,7 @@
                 <nav id="right">
                     <ul>
                         <li><a id="link5" href="">gallerie</a></li>
-                        <li id="link-6"><a id="link6" href="./reservation.html">rerservation</a></li>
+                        <li ><a id="link3" href="./reservation.html">rerservation</a></li>
                         <li><a id="link7" href="">boutique</a></li>
                         <li><a id="link8" href="">contact</a></li>
 
@@ -90,9 +90,116 @@
 
         <main>
             <div class="chambre">
+                <h1>chambre standard</h1>
                 <div class="wrapper">
+                    
                     <div class="carousel-1">
-                        
+                        <img src="./standard.jpg" alt="">
+                        <img src="./standard 1.jpg" alt="">
+                       
+                        <div id="next" class="slider-btn"></div>
+                    </div>
+                    <div class="details">
+                        <div class="details-content">
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Chambre 1 ou 2 personne(s)</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Douche à l'Italienne</p>
+                        </li>
+                    </div>
+                    </div>
+                </div>
+                <h1>chambre confort</h1>
+                <div class="wrapper">
+                    <div id="previous" class="slider-btn"></div>
+                    <div class="carousel-1">
+                        <img src="./standard.jpg" alt="">
+                        <img src="./standard 1.jpg" alt="">
+                       
+                        <div id="next" class="slider-btn"></div>
+                    </div>
+                    <div class="details">
+                        <div class="details-content">
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Chambre 1 ou 2 personne(s)</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Coin détente</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Baignoire ou Douche à l'Italienne</p>
+                        </li>
+                    </div>
+                    </div>
+                </div>
+                <h1>suite junior (deux pièces)</h1>
+                <div class="wrapper">
+                    <div id="previous" class="slider-btn"></div>
+                    <div class="carousel-1">
+                        <img src="./standard.jpg" alt="">
+                        <img src="./standard 1.jpg" alt="">
+                       
+                        <div id="next" class="slider-btn"></div>
+                    </div>
+                    <div class="details">
+                        <div class="details-content">
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Chambre 1 ou 2 personne(s)</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Salon détente</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Douche à l'Italienne</p>
+                        </li>
+                    </div>
+                    </div>
+                </div>
+                <h1>suite "foudjem" (présidentielle)</h1>
+                <div class="wrapper">
+                    <div id="previous" class="slider-btn"></div>
+                    <div class="carousel-1">
+                        <img src="./standard.jpg" alt="">
+                        <img src="./standard 1.jpg" alt="">
+                       
+                        <div id="next" class="slider-btn"></div>
+                    </div>
+                    <div class="details">
+                        <div class="details-content">
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Chambre 1 ou 2 personne(s)</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Terrasse 15m2</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Salon</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Coin détente</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Coin repas (table pour 6)</p>
+                        </li>
+                        <li>
+                            <img height="30" src="./hand.png" alt="">
+                            <p>Baignoire et Douche à l'Italienne</p>
+                        </li>
+                    </div>
                     </div>
                 </div>
 
@@ -185,6 +292,8 @@
         }
 
         menusNav();
+
+ 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.min.js"></script>
     <script>

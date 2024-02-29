@@ -762,10 +762,7 @@ header.active {
     min-height: 50vh;
 }
 
-.header .booking {
 
-    margin-top: 200px !important;
-}
 
 header .menu.actives{
     position: fixed !important;
