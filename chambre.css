@@ -400,9 +400,13 @@ main .chambre .details{
     max-width: 300px; 
     background-color: var(--bleu);
     user-select: none;
-   
-
     
+    
+    
+    
+}
+main .chambre #details {
+    height: 400px;
     
 }
 
@@ -1031,8 +1035,13 @@ header .menu::after {
         display: flex;
         flex-direction: column;
         
+    }
+    main .chambre .details {
+        height: auto;
         
-        
+    }
+    main .chambre .details li:last-of-type{
+        border-bottom: none;
     }
     main .chambre h1{
         background-color: white;
