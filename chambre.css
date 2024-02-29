@@ -415,6 +415,7 @@ main .chambre .details .details-content{
     width: 100%;
     max-width: 300px; 
     
+    
 }
 main .chambre .details .details-content li{
     border-bottom: 1px solid var(--bleu);
