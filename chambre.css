@@ -55,7 +55,7 @@ html {
 body {
 
     background-color: #f0f0f0;
-    
+
     overflow-x: hidden;
 
 
@@ -157,13 +157,15 @@ header nav ul {
 header nav ul li {
     padding: 0 15px;
 }
-header nav ul #link-6 a{
+
+header nav ul #link-6 a {
     position: relative;
     color: var(--beige);
-   
-    
+
+
 }
-header nav ul #link-6 a::after{
+
+header nav ul #link-6 a::after {
     content: "";
     width: 100%;
     height: 2px;
@@ -180,7 +182,8 @@ header nav ul li a {
     color: white;
     transition: 0.25s ease;
 }
-header nav ul li a::after{
+
+header nav ul li a::after {
     position: absolute;
     content: "";
     width: 50%;
@@ -193,7 +196,8 @@ header nav ul li a::after{
     bottom: -2px;
 
 }
-header nav ul li a:hover::after{
+
+header nav ul li a:hover::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -225,7 +229,7 @@ header .menu {
     padding-top: 5px;
     display: none;
     cursor: pointer;
-  
+
 }
 
 header .menu .bar,
@@ -271,7 +275,7 @@ header .menu.active .bar {
 
 }
 
-.header .hero li{
+.header .hero li {
     margin-top: 80px;
 }
 
@@ -280,13 +284,13 @@ header .menu.active .bar {
     font-size: 3.5rem;
     font-weight: lighter;
     text-transform: uppercase;
-    letter-spacing:7px;
+    letter-spacing: 7px;
     font-weight: lighter;
-    
+
 }
 
 
-.header .hero li h1::before{
+.header .hero li h1::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -299,7 +303,7 @@ header .menu.active .bar {
     border-radius: 5px;
 }
 
-.header .hero li h1::after{
+.header .hero li h1::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -310,30 +314,31 @@ header .menu.active .bar {
     bottom: 50%;
     transform: translateY(50%);
     border-radius: 5px;
- 
-}
-
-main{
-background: url(./background2.png);
-background-size:cover;
-background-repeat: no-repeat;
-background-position: right;
-
-
-
-
 
 }
 
-main .chambre{
+main {
+    background: url(./background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+
+
+
+}
+
+main .chambre {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 100px 0;
-    
+
 }
-main .chambre h1{
+
+main .chambre h1 {
     margin-bottom: 35px;
     margin-top: 100px;
     font-family: "zin";
@@ -343,12 +348,12 @@ main .chambre h1{
     color: var(--bleu);
     position: relative;
     user-select: none;
-    
+
 }
 
-main .chambre h1::after{
+main .chambre h1::after {
     position: absolute;
-    content:"";
+    content: "";
     width: 55px;
     height: 6px;
     background-color: var(--bleu);
@@ -358,151 +363,239 @@ main .chambre h1::after{
     top: 17px;
     border-radius: 5px;
 }
-main .chambre .wrapper{
+
+main .chambre .wrapper {
     width: 100%;
     max-width: 900px;
     height: 433px;
-   display: flex;
-   
-   
-   
+    display: flex;
+    position: relative;
+
+
+
 }
 
-main .chambre .wrapper .carousel-1{
-    width: 100%;
+
+main .chambre .wrapper .carousel-1 {
+    scroll-snap-align: start;
     display: grid;
     grid-auto-flow: column;
-    gap: 16px;
-    overflow-x: hidden;
     grid-auto-columns: 100%;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    
     
 }
-main .chambre .wrapper .carousel-1 img{
+main .chambre .wrapper .carousel-1::-webkit-scrollbar{
+    display: none;
+}
+
+main .chambre .wrapper .carousel-1 .slider-btn{
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    
+ 
+  
+   
+  
+    
+}
+main .chambre .wrapper .carousel-1 .slider-btn:active{
+    transition: 0.4s ease;
+    scale: 0.8;
+}
+main .chambre .wrapper .carousel-1 .slider-btn img {
+    height: 30px;
+   
+    box-shadow: 1px 1px 1px black;
+
+   
+ 
+    
+}
+#previous{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+  
+}
+ #next{
+    position: absolute;
+    height: 40px;
+    right: 320px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+
+main .chambre .wrapper .carousel-1 img {
     width: 100%;
+    height: 433px;
+    object-fit: cover;
+    animation: opacity 0.6s ease;
+    scroll-snap-align: start;
 
 }
-.arrow-up{
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.arrow-up {
     position: fixed;
-    right: 6px ;
+    right: 6px;
     bottom: 10px;
     z-index: 99;
     transition: 0.4s ease;
     opacity: 0.8;
     transform: translateX(300px);
     cursor: pointer;
-  
+
 
 }
-main .chambre .details{
+
+main .chambre .details {
     font-family: 'Segoe UI';
     height: 433px;
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
     background-color: var(--bleu);
     user-select: none;
-    
-    
-    
-    
-}
-main .chambre #details {
-    height: 400px;
-    
+
+
+
+
 }
 
-main .chambre .details .details-content{
+main .chambre #details {
+    height: 433px;
+   
+
+}
+
+main .chambre .details .details-content {
     background-color: var(--beige);
     width: 100%;
-    max-width: 300px; 
-    
-    
+    max-width: 300px;
+
+
 }
-main .chambre .details .details-content li{
+
+main .chambre .details .details-content li {
     border-bottom: 1px solid var(--bleu);
     padding: 2.9px 0;
     padding-left: 5px;
 }
-main .chambre .details .details-content li:last-of-type{
+
+main .chambre .details .details-content li:last-of-type {
     border-bottom: none;
 }
-main .chambre .details img, main .chambre .details p{
+
+main .chambre .details img,
+main .chambre .details p {
     display: inline-block;
     vertical-align: middle;
-    margin:15px 3px;
-    
+    margin: 15px 3px;
+
 }
-.arrow-up.active{
+
+.arrow-up.active {
     transform: translateX(0);
     transition: 0.4s ease;
 }
-.arrow-up:hover{
+
+.arrow-up:hover {
     transition: 0.4s ease;
     opacity: 1;
 }
-.arrow-up:active{
+
+.arrow-up:active {
     transition: 0.4s ease;
     scale: 0.7;
 }
 
 
-footer{
+footer {
     color: white;
     background-color: var(--beige);
     font-family: 'zin';
 }
-footer .top{
+
+footer .top {
     background-color: var(--bleu);
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding:50px;
-    
+    padding: 50px;
+
 }
-footer .top .content-1{
+
+footer .top .content-1 {
     width: 100%;
     max-width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-   
+
 
 }
-footer .box-1 h5, footer .box-1 p{
+
+footer .box-1 h5,
+footer .box-1 p {
     margin-bottom: 10px;
 }
-footer .box-1 .icone{
+
+footer .box-1 .icone {
     margin-top: 50px;
     display: flex;
     align-items: center;
 }
-footer .box-1 .icone div{
+
+footer .box-1 .icone div {
     padding: 25px;
     height: 20px;
     width: 20px;
     border-radius: 50%;
     background-color: var(--beige);
-   margin-right: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
-   
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-   
+
+
+
 }
-footer .box-1 .icone .fa-brands{
+
+footer .box-1 .icone .fa-brands {
     scale: 1;
     color: var(--bleu);
-    
-    
+
+
 }
-footer .box-2{
+
+footer .box-2 {
     text-align: end;
 }
-footer .box-2 h5, footer .box-2 p{
+
+footer .box-2 h5,
+footer .box-2 p {
     margin-bottom: 10px;
 }
 
-footer .box-2 input{
+footer .box-2 input {
     margin-top: 50px;
     padding: 13px;
     width: 100%;
@@ -510,46 +603,52 @@ footer .box-2 input{
     background-color: var(--beige);
     border: 1px solid var(--beige);
 }
-footer .box-2 input[type="submit"]{
-    width:  50px;
+
+footer .box-2 input[type="submit"] {
+    width: 50px;
     background-color: var(--bleu);
     border: 1px solid var(--beige);
     cursor: pointer;
-    
+
 }
-footer .box-2 input::placeholder{
+
+footer .box-2 input::placeholder {
     font-size: 12px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.64);
 }
-footer .box-2 form .icone{
+
+footer .box-2 form .icone {
     position: relative;
     height: fit-content;
     width: fit-content;
-  
-    
+
+
 }
-footer .box-2 form .icone .fa{
+
+footer .box-2 form .icone .fa {
     position: absolute;
     bottom: 13px;
     right: 15px;
     color: var(--beige);
-    
+
 }
-footer form{
+
+footer form {
     display: flex;
     justify-content: end;
     align-items: center;
-    
+
 }
 
-footer .bottom{
-    padding:50px;
+footer .bottom {
+    padding: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--bleu);
 }
-footer .bottom .content-2{
+
+footer .bottom .content-2 {
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
@@ -558,36 +657,39 @@ footer .bottom .content-2{
     justify-content: center;
     align-items: center;
 }
-footer .bottom .logo p{
+
+footer .bottom .logo p {
     font-size: 12px;
     letter-spacing: 8px;
     margin-top: 8px;
 }
 
-footer .bottom .content-2 .logo{
+footer .bottom .content-2 .logo {
     margin: 40px 0;
 
 }
-footer .bottom .content-2 span{
+
+footer .bottom .content-2 span {
     margin: 30px 0;
     font-weight: bold;
-    color:  rgba(51, 50, 106, 0.568);
-    
+    color: rgba(51, 50, 106, 0.568);
+
 }
 
-footer .bottom .content-2 .lien p{
+footer .bottom .content-2 .lien p {
     font-weight: bolder;
-    margin:10px 0;
+    margin: 10px 0;
     color: var(--bleu);
     font-size: 12px;
     text-transform: lowercase;
     text-align: center;
-   
-    
+
+
 
 
 }
-footer .bottom .content-2 .lien a{
+
+footer .bottom .content-2 .lien a {
     font-weight: bolder;
     margin: 0 10px;
     color: var(--bleu);
@@ -596,11 +698,11 @@ footer .bottom .content-2 .lien a{
 
 }
 
-.footer{
+.footer {
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
-    
+
 }
 
 header.active {
@@ -612,28 +714,32 @@ header.active {
 
 }
 
-.section-1.active{
-    z-index: -1;
-}
-.section-3.active{
-    z-index: -1;
-}
-.section-4.active{
+.section-1.active {
     z-index: -1;
 }
 
-.section-1.actives{
+.section-3.active {
     z-index: -1;
 }
-.section-3.actives{
+
+.section-4.active {
     z-index: -1;
 }
-.section-4.actives{
+
+.section-1.actives {
+    z-index: -1;
+}
+
+.section-3.actives {
+    z-index: -1;
+}
+
+.section-4.actives {
     z-index: -1;
 }
 
 .nav2.active {
-   position: fixed;
+    position: fixed;
     transition: 0.25s ease;
     top: 170px;
     transition-behavior: smooth;
@@ -641,7 +747,7 @@ header.active {
     z-index: 1;
     opacity: 1;
     display: block;
-  
+
 
 }
 
@@ -657,7 +763,7 @@ header.active {
     display: block;
     padding-top: 30px;
     transform: translateY(500px);
-   
+
     opacity: 0;
     z-index: -1;
     overflow-y: scroll !important;
@@ -666,9 +772,10 @@ header.active {
 
 
 }
-.nav2::-webkit-scrollbar{
+
+.nav2::-webkit-scrollbar {
     width: 0;
-    
+
 }
 
 
@@ -709,24 +816,26 @@ header.active {
     margin-top: 200px !important;
 }
 
-header .menu.actives{
+header .menu.actives {
     position: fixed !important;
-   
-    
-    
+
+
+
 
 }
-header .menu.active{
+
+header .menu.active {
     display: block !important;
 }
+
 header .menu {
-  
+
     position: absolute;
     right: 80px;
     top: 160px !important;
     z-index: 1;
-    
-  
+
+
 }
 
 header .menu .bar,
@@ -737,11 +846,11 @@ header .menu::after {
     top: 15px;
 }
 
-.menu2.active{
+.menu2.active {
     display: none;
 }
 
- .menu2 {
+.menu2 {
     width: 60px;
     height: 60px;
     background-color: var(--beige);
@@ -760,14 +869,14 @@ header .menu::after {
     transition: 0.25s ease;
 }
 
-.menu2:hover{
+.menu2:hover {
     opacity: 1;
     transition: 0.25s ease;
 }
 
- .menu2 .bar,
- .menu2::after,
- .menu2::before {
+.menu2 .bar,
+.menu2::after,
+.menu2::before {
     content: '';
     width: 20px;
     height: 3px;
@@ -778,15 +887,15 @@ header .menu::after {
     transition: 0.25s ease;
 }
 
- .header #left.active{
-     display: none;
- 
-    }
+.header #left.active {
+    display: none;
 
-    
-    
+}
 
-.header #right.active{
+
+
+
+.header #right.active {
     display: none;
 }
 
@@ -798,41 +907,45 @@ header .menu::after {
 /* 2xl */
 
 @media (max-width:1453px) {
-   
-    footer .top .content-1{
+
+    footer .top .content-1 {
         display: flex;
         flex-direction: column;
-        justify-content: center ;
-       align-items: center;
-       text-align: center;
-       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
 
-        
+
+
     }
-    footer .top .content-1 .box-2{
+
+    footer .top .content-1 .box-2 {
         text-align: start;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
-        
+
+
     }
-    footer .top .content-1 .box-2 p{
-      
+
+    footer .top .content-1 .box-2 p {
+
         width: 100%;
         max-width: 350px;
         text-align: center;
         text-indent: -10px;
-     
-    
+
+
     }
-    footer .top .content-1 .box-2 form{
+
+    footer .top .content-1 .box-2 form {
         width: 100%;
         max-width: 350px;
     }
-    footer .bottom{
+
+    footer .bottom {
         text-align: center;
     }
 }
@@ -871,35 +984,39 @@ header .menu::after {
 
     }
 
-    .section-1.active{
-        z-index: -1;
-    }
-    .section-3.active{
-        z-index: -1;
-    }
-    .section-4.active{
+    .section-1.active {
         z-index: -1;
     }
 
-    .section-1.actives{
+    .section-3.active {
         z-index: -1;
     }
-    .section-3.actives{
+
+    .section-4.active {
         z-index: -1;
     }
-    .section-4.actives{
+
+    .section-1.actives {
         z-index: -1;
     }
-    
+
+    .section-3.actives {
+        z-index: -1;
+    }
+
+    .section-4.actives {
+        z-index: -1;
+    }
+
     .nav2.active {
-       position: fixed;
+        position: fixed;
         transition: 0.25s ease;
         top: 170px;
         transition-behavior: smooth;
         transform: translateY(0);
         z-index: 1;
         opacity: 1;
-      
+
 
     }
 
@@ -915,7 +1032,7 @@ header .menu::after {
         display: block;
         padding-top: 30px;
         transform: translateY(500px);
-       
+
         opacity: 0;
         z-index: -1;
         overflow-y: scroll !important;
@@ -923,9 +1040,10 @@ header .menu::after {
 
 
     }
-    .nav2::-webkit-scrollbar{
+
+    .nav2::-webkit-scrollbar {
         width: 0;
-        
+
     }
 
 
@@ -966,20 +1084,21 @@ header .menu::after {
         margin-top: 200px !important;
     }
 
-    header .menu.actives{
+    header .menu.actives {
         position: fixed !important;
-       
-        
-        
+
+
+
 
     }
+
     header .menu {
         display: block !important;
         position: absolute;
         right: 80px;
         top: 160px;
         z-index: 1;
-      
+
     }
 
     header .menu .bar,
@@ -990,11 +1109,11 @@ header .menu::after {
         top: 15px;
     }
 
-    .menu2.active{
+    .menu2.active {
         display: none;
     }
 
-     .menu2 {
+    .menu2 {
         width: 60px;
         height: 60px;
         background-color: var(--beige);
@@ -1013,15 +1132,15 @@ header .menu::after {
         opacity: 0.6;
         transition: 0.25s ease;
     }
-    
-    .menu2:hover{
+
+    .menu2:hover {
         opacity: 1;
         transition: 0.25s ease;
     }
-    
-     .menu2 .bar,
-     .menu2::after,
-     .menu2::before {
+
+    .menu2 .bar,
+    .menu2::after,
+    .menu2::before {
         content: '';
         width: 20px;
         height: 3px;
@@ -1037,54 +1156,90 @@ header .menu::after {
 /* lg  */
 
 @media (max-width:1134px) {
-    main .chambre .wrapper{
+    main .chambre .wrapper {
         display: flex;
         flex-direction: column;
-        
+
     }
-    main .chambre .details,  main .chambre #details {
+    #next{
+       
+        right: 20px;
+        top: 38%;
+        transform: translateY(-38%);
+       
+       
+    }
+    #previous{
+       
+      
+        top: 38%;
+        transform: translateY(-38%);
+       
+       
+    }
+
+    .next, .previous{
+      
+        top: 26% !important;
+        transform: translateY(-26%) !important;
+    }
+
+    main .chambre .details,
+    main .chambre #details {
         height: auto;
-        
+
     }
-    main .chambre .details li:last-of-type{
+
+    main .chambre .details li:last-of-type {
         border-bottom: none;
     }
-    main .chambre h1{
+
+    main .chambre h1 {
         background-color: white;
         padding: 12px;
         border-radius: 0 40px 40px 0;
     }
-    main .chambre h1::after{
+
+    main .chambre h1::after {
         background-color: white;
         top: 28px;
     }
-    main .chambre .wrapper{
+
+    main .chambre .wrapper {
         height: auto;
     }
-    main .chambre .wrapper .details{
+
+    main .chambre .wrapper .details {
 
         max-width: 900px;
     }
-    main .chambre .wrapper .details-content{
+
+    main .chambre .wrapper .details-content {
         max-width: 100%;
     }
 }
+
 @media (max-width:902px) {
-    .reservation{
+    .reservation {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
+
     }
+    main .chambre .wrapper .carousel-1 img {
+        height: auto;
+     
+     }
 }
 
 /* md */
 @media (max-width:776px) {
-   main{
-    padding:0 0 150px 0;
-   }
+    main {
+        padding: 0 0 150px 0;
+    }
 }
+
 @media (max-width:790px) {
     h1 {
         font-size: 2.5rem !important;
@@ -1141,7 +1296,7 @@ header .menu::after {
         padding-top: 0;
     }
 
-   
+
 
     header #hotel {
         margin-left: 40px;
@@ -1156,21 +1311,27 @@ header .menu::after {
 
 
 @media (max-width:768px) {}
+
 @media (max-width:714px) {
-    main .chambre h1, main .chambre h1::after{
+
+    main .chambre h1,
+    main .chambre h1::after {
         scale: 0.8;
     }
-    main .chambre h1::after{
+
+    main .chambre h1::after {
         top: 33px;
     }
 }
+
 @media (max-width:740px) {
-    main .chambre h1{
-       width: 100%;
-       padding: 5px;
-       text-align: center;
+    main .chambre h1 {
+        width: 100%;
+        padding: 5px;
+        text-align: center;
     }
-    .chambre h1::after{
+
+    .chambre h1::after {
         top: 25px !important;
     }
 }
@@ -1178,64 +1339,73 @@ header .menu::after {
 /* sm */
 @media (max-width:640px) {}
 
-@media (max-width:623px) {
-   
-
-}
+@media (max-width:623px) {}
 
 /* xm */
 @media (max-width:475px) {
     .header .hero h1 {
         font-size: 2rem !important;
-        
+
     }
- 
+
     body {
         font-size: 14px !important;
     }
-    
-    footer .top .content-1{
+
+
+    footer .top .content-1 {
         width: 100%;
         max-width: 100%;
     }
-    footer .top{
+
+    footer .top {
         padding: 50px 20px;
     }
-    footer .bottom{
+
+    footer .bottom {
         padding: 50px 0;
     }
+}
+
+@media (max-width:460px) {
+
+    .hero {
+        padding: 0 15px;
+     
     }
-    
-    
-    @media (max-width:408px) {
-        main .chambre h1{
-            border-radius:0 60px 60px 0;
-            padding: 5px 0 !important;
-            border-radius: 0 !important;
-        }
-        main .chambre h1::after{
-            top: 20px !important;
-        }
+}
+
+@media (max-width:408px) {
+    main .chambre h1 {
+        border-radius: 0 60px 60px 0;
+        padding: 5px 0 !important;
+        border-radius: 0 !important;
     }
 
-    
-    @media (max-width:398px) {
-        main .chambre h1::after{
-          width: 100px;
-          left: -70px;
-          top: 45px !important;
-          height: 10px;
-        }
+    main .chambre h1::after {
+        top: 20px !important;
     }
-    @media (max-width:386px) {
+}
 
-        .reservation form{
-            padding: 30px 0;
-        }
+
+@media (max-width:398px) {
+    main .chambre h1::after {
+        width: 100px;
+        left: -70px;
+        top: 45px !important;
+        height: 10px;
     }
-    
-    
-    
+}
+
+@media (max-width:386px) {
+
+    .reservation form {
+        padding: 30px 0;
+    }
+}
+
+
+
 @media (max-width:271px) {
     .header .hero #label2 #fa {
         position: absolute;

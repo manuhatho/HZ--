@@ -94,10 +94,16 @@
                 <div class="wrapper">
                     
                     <div class="carousel-1">
-                        <img src="./standard.jpg" alt="">
-                        <img src="./standard 1.jpg" alt="">
+                    
+                        <img class="box1"  src="./standard.jpg" alt="">
+                        <img  class="box1" src="./standard 1.jpg" alt="">
+                        <div id="previous" class="slider-btn card1">
+                            <img src="./arrow-left.png" alt="">
+                        </div>
+                        <div id="next" class="slider-btn card1">
+                            <img  src="./arrow-right.png" alt="">
+                        </div>
                        
-                        <div id="next" class="slider-btn"></div>
                     </div>
                     <div class="details">
                         <div class="details-content">
@@ -114,12 +120,17 @@
                 </div>
                 <h1>chambre confort</h1>
                 <div class="wrapper">
-                    <div id="previous" class="slider-btn"></div>
-                    <div class="carousel-1">
-                        <img src="./chambre-confort.jpg" alt="">
-                        <img src="./standard 1.jpg" alt="">
+            
+                    <div class="carousel-1 carousel-2">
+                        <img  class="box2"  src="./chambre-confort.jpg" alt="">
+                        <img   class="box2" src="./standard 1.jpg" alt="">
                        
-                        <div id="next" class="slider-btn"></div>
+                        <div id="previous" class="slider-btn card2">
+                            <img src="./arrow-left.png" alt="">
+                        </div>
+                        <div id="next" class="slider-btn card2">
+                            <img  src="./arrow-right.png" alt="">
+                        </div>
                     </div>
                     <div id="details" class="details">
                         <div class="details-content">
@@ -140,12 +151,17 @@
                 </div>
                 <h1>suite junior (deux pièces)</h1>
                 <div class="wrapper">
-                    <div id="previous" class="slider-btn"></div>
-                    <div class="carousel-1">
-                        <img src="./standard.jpg" alt="">
-                        <img src="./standard 1.jpg" alt="">
+                 
+                    <div class="carousel-1 carousel-3">
+                        <img class="box3"  src="./standard.jpg" alt="">
+                        <img  class="box3" src="./standard 1.jpg" alt="">
                        
-                        <div id="next" class="slider-btn"></div>
+                        <div id="previous" class="slider-btn card3">
+                            <img src="./arrow-left.png" alt="">
+                        </div>
+                        <div id="next" class="slider-btn card3">
+                            <img  src="./arrow-right.png" alt="">
+                        </div>
                     </div>
                     <div class="details">
                         <div class="details-content">
@@ -166,12 +182,16 @@
                 </div>
                 <h1>suite "foudjem" (présidentielle)</h1>
                 <div class="wrapper">
-                    <div id="previous" class="slider-btn"></div>
-                    <div class="carousel-1">
-                        <img src="./suite-foudjem.jpg" alt="">
-                        <img src="./standard 1.jpg" alt="">
+                    <div class="carousel-1 carousel-4">
+                        <img class="box4"  src="./suite-foudjem.jpg" alt="">
+                        <img  class="box4" src="./standard 1.jpg" alt="">
                        
-                        <div id="next" class="slider-btn"></div>
+                        <div id="previous" class="slider-btn card4 previous">
+                            <img src="./arrow-left.png" alt="">
+                        </div>
+                        <div id="next" class="slider-btn card4 next">
+                            <img  src="./arrow-right.png" alt="">
+                        </div>
                     </div>
                     <div id="details" class="details">
                         <div class="details-content">
@@ -299,8 +319,96 @@
 
         menusNav();
 
+        
+
+let imageIndex = 0;
+
+function diapo1(){
+
+  let images = document.getElementsByClassName('box1');
+  
+  for(i = 0; i < images.length; i++){
+      images[i].style.display = "none";
+    }
+    imageIndex++;
+    
+    if(imageIndex >= images.length){
+        imageIndex = 0;
+    }
+    images[imageIndex].style.display = "block";
+
+    
+    setTimeout(diapo1,6000);
+
+
+    function diapo2(){
+
+    let img = document.getElementsByClassName('box2');
+    
+    for(i = 0; i < img.length; i++){
+        img[i].style.display = "none";
+    }
+    imageIndex++;
+    
+    if(imageIndex >= img.length){
+        imageIndex = 0;
+    }
+    img[imageIndex].style.display = "block";
+    
+    setTimeout(diapo2,6000);
+
+}
+
+diapo2();
+
+    function diapo3(){
+
+    let img = document.getElementsByClassName('box3');
+    
+    for(i = 0; i < img.length; i++){
+        img[i].style.display = "none";
+    }
+    imageIndex++;
+    
+    if(imageIndex >= img.length){
+        imageIndex = 0;
+    }
+    img[imageIndex].style.display = "block";
+    
+    setTimeout(diapo3,6000);
+
+}
+
+diapo3();
+    function diapo4(){
+
+    let img = document.getElementsByClassName('box4');
+    
+    for(i = 0; i < img.length; i++){
+        img[i].style.display = "none";
+    }
+    imageIndex++;
+    
+    if(imageIndex >= img.length){
+        imageIndex = 0;
+    }
+    img[imageIndex].style.display = "block";
+    
+    setTimeout(diapo4,6000);
+
+}
+
+diapo4();
+
+}
+// diapo1();
+
+
  
     </script>
+
+    <script src="./chm.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.min.js"></script>
     <script>
         var picker = new Pikaday({ field: document.getElementById('datePicker') });

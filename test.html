@@ -183,6 +183,8 @@
 <script>
    const carouse1 = document.querySelector('.carouse1');
    const arrowBtns = document.querySelectorAll('.wrapper .slide-button');
+  
+
    const firstCardWidth = carouse1.querySelector('.card').offsetWidth;
 
    let isDragging = false, startX, startScrollLeft;
@@ -191,6 +193,7 @@
    arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
        carouse1.scrollLeft += btn.id === "left-button" ? -firstCardWidth : firstCardWidth;
+       
     })
    })
 
