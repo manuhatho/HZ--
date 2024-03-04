@@ -442,8 +442,19 @@ main .chambre .wrapper .carousel-1 img {
     object-fit: cover;
     animation: opacity 0.6s ease;
     scroll-snap-align: start;
+    
+}
+main .chambre .box{
+    height: 458px;
+
+    
+    
+}
+main .chambre .wrapper .carousel-1 .box4{
+    height: 458px;
 
 }
+main .chambre .box4
 @keyframes opacity {
     from{
         opacity: 0;
@@ -482,9 +493,11 @@ main .chambre .details {
 
 main .chambre #details {
     height: 433px;
+  
    
 
 }
+
 
 main .chambre .details .details-content {
     background-color: var(--beige);
@@ -498,6 +511,28 @@ main .chambre .details .details-content li {
     border-bottom: 1px solid var(--bleu);
     padding: 2.9px 0;
     padding-left: 5px;
+}
+main .chambre .details .details-content #reserver{
+    transition: 0.25s ease;
+    background-color: var(--bleu);
+    border: 1px solid var(--beige);
+    padding-left: 10px;
+
+}
+
+
+main .chambre .details .details-content #reserver i{
+    vertical-align: middle;
+    color: var(--beige);
+  
+}
+
+main .chambre .details .details-content #reserver p{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--beige);
+    transition: 0.25s ease;
+    
 }
 
 main .chambre .details .details-content li:last-of-type {
@@ -1160,6 +1195,12 @@ header .menu::after {
         display: flex;
         flex-direction: column;
 
+    }
+    main .chambre .box{
+        height: auto;
+    
+        
+        
     }
     #next{
        
