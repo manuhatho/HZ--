@@ -290,33 +290,6 @@ header .menu.active .bar {
 }
 
 
-.header .hero li h1::before {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 40px;
-    background-color: white;
-    display: block;
-    left: -60px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 5px;
-}
-
-.header .hero li h1::after {
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 40px;
-    background-color: white;
-    display: block;
-    right: -53px;
-    bottom: 50%;
-    transform: translateY(50%);
-    border-radius: 5px;
-
-}
-
 main {
     background: url(./background2.png);
     background-size: cover;
@@ -435,6 +408,16 @@ main .chambre .wrapper .carousel-1 .slider-btn img {
    
 }
 
+main .chambre .box{
+    height: 458px;
+    
+    
+    
+}
+main .chambre .wrapper .carousel-1 .box4{
+    height: 458px;
+    
+}
 
 main .chambre .wrapper .carousel-1 img {
     width: 100%;
@@ -444,17 +427,7 @@ main .chambre .wrapper .carousel-1 img {
     scroll-snap-align: start;
     
 }
-main .chambre .box{
-    height: 458px;
 
-    
-    
-}
-main .chambre .wrapper .carousel-1 .box4{
-    height: 458px;
-
-}
-main .chambre .box4
 @keyframes opacity {
     from{
         opacity: 0;
@@ -740,6 +713,9 @@ footer .bottom .content-2 .lien a {
 
 }
 
+.nav2{
+    display: none !important;
+}
 header.active {
     background-color: var(--bleu);
     position: fixed;
@@ -781,7 +757,7 @@ header.active {
     transform: translateY(0);
     z-index: 1;
     opacity: 1;
-    display: block;
+    display: block !important;
 
 
 }
@@ -1345,9 +1321,7 @@ header .menu::after {
 
     }
 
-    .header .hero {
-        margin-top: 20px;
-    }
+   
 }
 
 
@@ -1355,14 +1329,7 @@ header .menu::after {
 
 @media (max-width:714px) {
 
-    main .chambre h1,
-    main .chambre h1::after {
-        scale: 0.8;
-    }
 
-    main .chambre h1::after {
-        top: 33px;
-    }
 }
 
 @media (max-width:740px) {

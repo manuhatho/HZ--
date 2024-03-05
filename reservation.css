@@ -286,32 +286,6 @@ header .menu.active .bar {
 }
 
 
-.header .hero li h1::before{
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 40px;
-    background-color: white;
-    display: block;
-    left: -60px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 5px;
-}
-
-.header .hero li h1::after{
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 40px;
-    background-color: white;
-    display: block;
-    right: -53px;
-    bottom: 50%;
-    transform: translateY(50%);
-    border-radius: 5px;
- 
-}
 
 main{
 background: url(./background.png);
