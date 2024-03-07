@@ -1333,10 +1333,12 @@ header .menu::after {
         flex-direction: column;
         padding-top: 20px;
         height: 170px;
-
-
+        
+        
     }
-
+    .header  .hero{
+        margin-top: 20px;
+    }
     header #hotel {
         scale: 0.8;
     }
