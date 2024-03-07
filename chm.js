@@ -62,33 +62,7 @@ function scrollBtns(){
     
     })
 
-    arrowBtns4.forEach(btn => {
-      btn.addEventListener("click", () => {
-          console.log('click');
-          carousel4.scrollLeft += btn.id === "previous" ? -firstDiapoWidth : firstDiapoWidth4;
-          updateButtonVisibility();
-      });
-  });
-  
-  function updateButtonVisibility() {
-      const scrollPosition = carousel4.scrollLeft;
-      const maxScroll = carousel4.scrollWidth - carousel4.clientWidth;
-  
-      if (scrollPosition === 0) {
-          document.getElementById('previous').style.display = 'none';
-      } else {
-          document.getElementById('previous').style.display = 'block';
-      }
-  
-      if (scrollPosition >= maxScroll) {
-          document.getElementById('next').style.display = 'none';
-      } else {
-          document.getElementById('next').style.display = 'block';
-      }
-  }
-  
-  // Appel initial pour vérifier la visibilité des boutons au chargement de la page
-  updateButtonVisibility();
+    
     
     }
     scrollBtns();
