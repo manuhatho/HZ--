@@ -528,7 +528,37 @@ main .chambre .details p {
     display: inline-block;
     vertical-align: middle;
     margin: 15px 3px;
+    
+}
+main .chambre .equipement{
+    width: 100%;
+    max-width: 87%;
+    font-family: 'zin';
+    
+}
+main .chambre .equipement h1{
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+    margin: 50px auto ;
+    
+}
 
+main .chambre .equipement .equipContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+   
+    width: 100%;
+}
+.equipContent img, .equipContent p{
+    display:inline-block;
+    vertical-align: middle;
+    margin-bottom:10px ;
+}
+.equipContent img{
+    margin-right: 5px;
 }
 
 .arrow-up.active {
@@ -1198,6 +1228,11 @@ header .menu::after {
         max-width: 90%;
       
     
+    }
+    main .chambre .equipement{
+        max-width: 100%;
+        padding: 0 10px;
+        
     }
   
     #next{
