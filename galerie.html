@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reservation.css">
+    <link rel="stylesheet" href="./galerie.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.min.css">
-    <title>Hôtel Zingana-Reservation</title>
+    <title>Hôtel Zingana-Galerie</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                     <ul>
                         <li><a id="link1" href="./index.html">accueil</a></li>
                         <li><a id="link2" href="">à propos</a></li>
-                        <li><a id="link3" href="./chambre.html">chambres</a></li>
+                        <li ><a id="link5" href="./chambre.html">chambres</a></li>
                         <li><a id="link4" href="">restauration</a></li>
                     </ul>
                 </nav>
@@ -34,8 +34,8 @@
                 </nav>
                 <nav id="right">
                     <ul>
-                        <li><a id="link5" href="./galerie.html">gallerie</a></li>
-                        <li id="link-6"><a id="link6" href="./reservation.html">rerservation</a></li>
+                        <li><a id="link-6" href="./galerie.html">gallerie</a></li>
+                        <li><a id="link3" href="./reservation.html">rerservation</a></li>
                         <li><a id="link7" href="">boutique</a></li>
                         <li><a id="link8" href="">contact</a></li>
 
@@ -68,7 +68,7 @@
             <div class="hero">
 
                 <li>
-                    <h1>réservation</h1>
+                    <h1>Gallerie</h1>
                 </li>
 
 
@@ -88,65 +88,85 @@
             <img src="./arrow-up.png" height="55" alt="">
         </div>
 
-        <main>
-            <div class="reservation">
-                <div class="img"><img height="100" src="./resav.jpg" alt=""></div>
-                <form name="Booking" action="">
-                    <h2>Zingana Hôtel</h2>
-                    <label for="datePicker">
-                        <i class="fa-regular fa-calendar"></i>
-                        <input class="style" type="text" id="datePicker" name="Arrivée" placeholder="arrivée">
-                    </label>
-                    <label for="datePicker">
-                        <i class="fa-regular fa-calendar"></i>
-                        <input class="style" type="text" id="datePicker" name="Départ" placeholder="Départ">
-                    </label>
-                    <select name="Nombre d'adulte" id="">
-                        <option value="Adultes">Adulte</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                    <select name="Nombre d'enfant" id="">
-                        <option value="Enfants">Enfant</option>
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
+        <div class="main">
+      
+             
+<div class="container">
 
-                    <select name="type de chambre" id="">
-                        <option value="">chambre</option>
-                        <option value="1">Standard</option>
-                        <option value="2">Confort</option>
-                        <option value="3">Juniors</option>
-                        <option value="4">Foudjem (Présidentielle)</option>
-                    </select>
 
-                    
-                    <br><label id="label-rooms" for="rooms">
-                        NOMBRE DE CHAMBRE :
-                    <input id="rooms" type="number" name="Nombre de chambre" min="01" max="32" placeholder="01">
-                      </label>
-
-                    <input type="submit" name="Booking" value="Reserver">
-                </form>
-
-            </div>
-        </main>
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="./1.jpg" style="width:100%">
     </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="./1w.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="./2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="./20230404_201523.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="./2w.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="./2w.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+        <img src="./3w.jpg" style="width:100%">
+    </div>
+  
+   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="./1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./1w.jpg" style="width:100%" onclick="currentSlide(2)" alt="lorem">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./2.jpg" style="width:100%" onclick="currentSlide(3)" alt="lorem">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./20230404_201523.jpg" style="width:100%" onclick="currentSlide(4)" alt="lorem">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./2w.jpg" style="width:100%" onclick="currentSlide(5)" alt="lorem">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./4.jpg" style="width:100%" onclick="currentSlide(6)" alt="lorem">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="./3w.jpg" style="width:100%" onclick="currentSlide(7)" alt="lorem">
+      </div>
+    </div>
+  </div>
+  
+    </div>
+
+</div>
 
 
 
@@ -211,29 +231,9 @@
 
 
 
-    <script>
 
-        function menusNav() {
+    <script src="./gallerie.js"></script>
 
-            const navLeft = document.getElementById("left");
-            const navRight = document.getElementById("right");
-            const menu2 = document.querySelector(".menu2");
-            const menuLink = document.querySelectorAll("#link_menu");
-
-            menuLink.forEach((link) => {
-                link.addEventListener("click", () => {
-                    navLeft.classList.toggle("active");
-                    navRight.classList.toggle("active");
-
-
-                })
-            })
-
-
-        }
-
-        menusNav();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.min.js"></script>
     <script>
         var picker = new Pikaday({ field: document.getElementById('datePicker') });
