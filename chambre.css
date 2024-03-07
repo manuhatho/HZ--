@@ -1215,14 +1215,15 @@ header .menu::after {
     }
     main .chambre .box{
         height: auto;
-       
-
-
         
-    
+        
+        
+        
+        
         
         
     }
+ 
     main .chambre {
       
         max-width: 90%;
@@ -1323,7 +1324,7 @@ header .menu::after {
 
 @media (max-width:790px) {
     h1 {
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
     }
 
 
@@ -1440,11 +1441,18 @@ header .menu::after {
 }
 
 @media (max-width:460px) {
-
+    
     .hero {
         padding: 0 15px;
-     
+        
     }
+}
+@media (max-width:448px){
+    h1{
+        font-size: 22px !important;
+        
+    }
+   
 }
 
 @media (max-width:408px) {
@@ -1478,6 +1486,17 @@ header .menu::after {
 
 
 
+@media (max-width:367px){
+    main .chambre .equipement img{
+        height: 15px;
+        
+        
+        
+    }
+    main .chambre .equipement p{
+        font-size: 12px;
+    }
+}
 @media (max-width:271px) {
     .header .hero #label2 #fa {
         position: absolute;
