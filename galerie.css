@@ -313,6 +313,7 @@ header .menu.active .bar {
 
   .mySlides {
       display: none;
+      background-color: white;
     }
     .mySlides img{
         width: 100%;
@@ -327,7 +328,7 @@ header .menu.active .bar {
 
     @keyframes opacity {
         from{
-            opacity: 0;
+            opacity: 0.6;
         }
         to {
             opacity: 1;
