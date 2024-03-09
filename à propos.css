@@ -413,6 +413,10 @@ header .menu.active .bar {
     opacity: 0.5;
     letter-spacing: 1px;
 }
+.main .foot p a {
+    color: red;
+    text-decoration: underline;
+}
 
 .equipContent img,
 .equipContent p {
