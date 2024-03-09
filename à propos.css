@@ -41,7 +41,7 @@ body {
     width: 100%;
     background-size: cover;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
 
 }
@@ -644,29 +644,6 @@ header.active {
 
 }
 
-.section-1.active {
-    z-index: -1;
-}
-
-.section-3.active {
-    z-index: -1;
-}
-
-.section-4.active {
-    z-index: -1;
-}
-
-.section-1.actives {
-    z-index: -1;
-}
-
-.section-3.actives {
-    z-index: -1;
-}
-
-.section-4.actives {
-    z-index: -1;
-}
 
 .nav2.active {
     position: fixed;
@@ -748,6 +725,7 @@ header.active {
 
 header .menu.actives {
     position: fixed !important;
+    z-index: 1;
 
 
 
@@ -756,6 +734,7 @@ header .menu.actives {
 
 header .menu.active {
     display: block !important;
+    z-index: 1;
 }
 
 header .menu {
