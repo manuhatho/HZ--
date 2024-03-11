@@ -307,6 +307,7 @@ header .menu.active .bar {
     max-width: 80%;
     margin: 0 auto;
     font-family: 'zin';
+    background-color:var(--bleu);
     
   }
   
@@ -520,10 +521,11 @@ footer .box-2 input {
 }
 
 footer .box-2 input[type="submit"] {
-    width: 50px;
+    width:  50px !important;
     background-color: var(--bleu);
-    border: 1px solid var(--beige);
+    border: 1px solid var(--beige) !important;
     cursor: pointer;
+    padding: 13px !important;
 
 }
 
@@ -871,7 +873,7 @@ header .menu::after {
 /* xl  */
 
 
-@media (max-width:1282px) {
+@media (max-width:1283px) {
     header {
         display: flex;
         position: relative;

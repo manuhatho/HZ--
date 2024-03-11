@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./à propos.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.min.css">
-    <title>Hôtel Zingana- à propos</title>
+    <title>Hôtel Zingana-Contact</title>
 </head>
 
 <body>
@@ -23,9 +23,9 @@
                 <nav id="left">
                     <ul>
                         <li><a id="link1" href="./index.html">accueil</a></li>
-                        <li id="link-6"><a id="link6" href="./à propos.html">à propos</a></li>
-                        <li><a id="link2" href="./chambre.html">chambres</a></li>
-                        <li><a id="link4" href="">restauration</a></li>
+                        <li><a id="link2" href="./à propos.html">à propos</a></li>
+                        <li><a id="link3" href="./chambre.html">chambres</a></li>
+                        <li><a id="link4" href="restauration.html">restauration</a></li>
                     </ul>
                 </nav>
                 <nav id="hotel">
@@ -35,9 +35,9 @@
                 <nav id="right">
                     <ul>
                         <li><a id="link5" href="./galerie.html">gallerie</a></li>
-                        <li><a id="link3" href="./reservation.html">rerservation</a></li>
+                        <li><a id="link8" href="./reservation.html">rerservation</a></li>
                         <li><a id="link7" href="">boutique</a></li>
-                        <li><a id="link8" href="./contact.html">contact</a></li>
+                        <li id="link-6"><a id="link6" href="./contact.html">contact</a></li>
 
 
                     </ul>
@@ -55,7 +55,7 @@
 
 
                 <a id="link1" href="./index.html">accueil</a>
-                <a id="link2" href="">à propos</a>
+                <a id="link2" href="./à propos.html">à propos</a>
                 <a id="link3" href="./chambre.html">chambres</a>
                 <a id="link4" href="">restauration</a>
                 <a id="link5" href="./galerie.html">gallerie</a>
@@ -68,7 +68,7 @@
             <div class="hero">
 
                 <li>
-                    <h1>à propos</h1>
+                    <h1>Contact</h1>
                 </li>
 
 
@@ -84,53 +84,54 @@
         </div>
 
 
+        <div class="arrow-up">
+            <img src="./arrow-up.png" height="55" alt="">
+        </div>
 
+        <main>
+            <div class="reservation">
+                <div class="img"><img height="100" src="./resav.jpg" alt=""></div>
+                <form name="Booking" action="">
+                    <h2>Contactez Nous</h2>
+                    <div>
+                        <label for="name">
+                            <i class="fa-regular fa-user"></i>
+                        </label>
 
-        <div class="main">
-
-
-            <div class="main-content">
-
-                <div class="head">
-                    <h2>Notre Histoire</h2>
-                </div>
-                <div class="content">
-
-                    <div class="text">
-                        <h3>Zingana Hôtel</h3>
-                        <p id="break"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aspernatur nihil,
-                            reiciendis nemo perspiciatis amet animi! Nemo unde reiciendis cumque ratione quidem eos
-                            ducimus similique, soluta illo aperiam provident itaque aut illum temporibus necessitatibus
-                            ab est nulla libero fuga harum delectus asperiores? Dolore harum voluptates corporis nobis
-                            cumque. Suscipit asperiores accusantium neque numquam aut! Quis blanditiis similique vitae,
-                            quidem inventore vel officia tenetur? Tempora reiciendis vitae minima velit ipsa quibusdam
-                            recusandae consequuntur cumque assumenda? </p>
-
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nihil error facere
-                            necessitatibus temporibus animi, voluptate enim sed ullam obcaecati, iste culpa eveniet
-                            praesentium dolor pariatur totam maiores quibusdam accusantium dolor pariatur totam maiores
-                            quibusdam accusantium?</p>
+                        <input id="name" name="Name" type="text" placeholder=" Entrer votre Nom et Prenom" required>
                     </div>
+                    <div>
+                        <label for="phone">
+                            <i class="fa-solid fa-phone"></i>
+                        </label>
+                        
+                        <input id="phone" name="Phone" type="tel" placeholder=" Entrer votre numéro de téléphone" required>
+                    </div>
+                    <div>
+                        <label for="email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </label>
+                       
+                        <input id="email" name="Email" type="email" placeholder="Entrer votre adresse email email">
+                    </div>
+                    
+                    <div>
+                        <label for="message">
+                            <i class="fa-solid fa-pen"></i>
+                        </label>
+                        
+                        <textarea id="message" name="message"  cols="30" rows="1"  placeholder="Entrer votre message ici"></textarea>
 
-
-                    <img src="./imageA.jpg" alt="">
-
-
-
-                </div>
-
-                <div class="foot">
-                    <h3>Tranquillité, confort, hospitalité : Bienvenue chez nous.</h3>
-                    <p><a href="./reservation.html">Réservez</a> dès maintenant pour profiter!!!</p>
-                </div>
+                    </div>
+                   
+                    <input type="submit" value="Envoyer">
+                </form>
 
             </div>
-        </div>
+        </main>
     </div>
 
-    <div class="arrow-up">
-        <img src="./arrow-up.png" height="55" alt="">
-    </div>
+
 
     <footer>
         <div class="top">
@@ -184,6 +185,14 @@
     </footer>
 
     </div>
+
+
+
+
+
+
+
+
 
     <script>
 
