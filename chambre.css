@@ -389,12 +389,15 @@ main .chambre .wrapper .carousel-1 .slider-btn:active{
 }
 main .chambre .wrapper .carousel-1 .slider-btn img {
     height: 30px;
-   vertical-align: bottom;
+    vertical-align: bottom;
     box-shadow: 1px 1px 1px black;
-
-   
- 
     
+    
+    
+    
+}
+main .chambre .wrapper .carousel-3{
+ height: 100%;
 }
 #previous{
     position: absolute;
@@ -415,6 +418,7 @@ main .chambre .wrapper .carousel-1 .slider-btn img {
 
 main .chambre .box{
     height: 458px;
+    
     
     
     
