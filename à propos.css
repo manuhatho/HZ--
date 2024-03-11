@@ -540,6 +540,7 @@ footer .box-2 input[type="submit"] {
     border: 1px solid var(--beige) !important;
     cursor: pointer;
     padding: 13px !important;
+    vertical-align: middle;
 
 }
 
