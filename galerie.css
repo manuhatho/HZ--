@@ -810,7 +810,7 @@ header .menu::after {
 }
 
 .header #left.active {
-    display: none !important;
+    display: none;
 
 }
 
@@ -818,7 +818,7 @@ header .menu::after {
 
 
 .header #right.active {
-    display: none !important;
+    display: none;
 }
 
 

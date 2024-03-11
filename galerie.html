@@ -763,8 +763,32 @@
 
 
 
-
 <script>
+    function menusNav() {
+
+const navLeft = document.getElementById("left");
+const navRight = document.getElementById("right");
+const menu2 = document.querySelector(".menu2");
+const menuLink = document.querySelectorAll("#link_menu");
+
+menuLink.forEach((link) => {
+    link.addEventListener("click", () => {
+        navLeft.classList.toggle("active");
+        navRight.classList.toggle("active");
+
+
+    })
+})
+
+
+}
+
+menusNav();
+
+</script>
+<script>
+
+
     
     function arrowTop(){
 
