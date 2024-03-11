@@ -663,7 +663,7 @@ header.active {
 .nav2.active {
     position: fixed;
     transition: 0.25s ease;
-    top: 170px;
+    top: 230px;
     transition-behavior: smooth;
     transform: translateY(0);
     z-index: 1;
@@ -810,7 +810,7 @@ header .menu::after {
 }
 
 .header #left.active {
-    display: none;
+    display: none !important;
 
 }
 
@@ -818,7 +818,7 @@ header .menu::after {
 
 
 .header #right.active {
-    display: none;
+    display: none !important;
 }
 
 
@@ -933,7 +933,7 @@ header .menu::after {
     .nav2.active {
         position: fixed;
         transition: 0.25s ease;
-        top: 170px;
+        top: 230px;
         transition-behavior: smooth;
         transform: translateY(0);
         z-index: 1;
