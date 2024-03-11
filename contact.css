@@ -1105,12 +1105,16 @@ header .menu::after {
 
     .menu.active {
         position: absolute;
-        top: 564px !important;
+        top: 544px !important;
         z-index: 2;
 
     }
 
 
+
+    .nav2.active {
+        top: 150px;
+    }
 
     .nav2 {
         padding-top: 0;
