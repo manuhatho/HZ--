@@ -1228,6 +1228,7 @@ footer .box-2 input{
     max-width: 300px;
     background-color: var(--beige);
     border: 1px solid var(--beige);
+    outline: none;
 }
 footer .box-2 input[type="submit"]{
     width:  50px !important;

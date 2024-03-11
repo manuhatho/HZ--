@@ -525,6 +525,7 @@ footer .box-2 input[type="submit"]{
     cursor: pointer;
     padding: 13px !important;
     vertical-align: middle;
+  
     
 }
 footer .box-2 input::placeholder{
