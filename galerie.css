@@ -55,7 +55,7 @@ html {
 body {
 
     background-color: #f0f0f0;
-
+    
     overflow-x: hidden;
 
 
@@ -296,6 +296,7 @@ header .menu.active .bar {
   .main{
     background: url(./fond_page.jpg);
     width: 100%;
+    letter-spacing: 1px;
     
 
   }
