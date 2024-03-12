@@ -1,0 +1,1311 @@
+:root {
+
+    --bleu: rgb(51, 50, 106);
+    --beige: rgb(243, 231, 206);
+
+}
+
+
+@font-face {
+    font-family: 'zin';
+    src: url(./Assets/Fonts/Magistral-Cond-W08-Book.ttf);
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+
+
+    background: url(/backHer.jpg);
+    padding-bottom: 300px;
+    background-color: rgba(0, 0, 0, 0.558);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+
+
+    overflow-x: hidden;
+
+
+}
+
+
+
+body::-webkit-scrollbar {
+    width: 3px;
+    background-color: rgb(64, 61, 61);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+}
+
+
+
+
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+    font-family: 'zin';
+    letter-spacing: 2px;
+    height: auto;
+    font-size: 13px;
+    font-weight: bold;
+
+
+
+
+}
+
+.blend {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(3, 25, 44, 0.411);
+    z-index: -1;
+
+}
+
+header nav {
+    color: white;
+    margin: 0 30px;
+    transition: 0.3s ease;
+
+
+
+}
+
+
+
+.nav2 {
+    display: none;
+}
+
+
+
+header #hotel {
+    text-align: center;
+    user-select: none;
+
+
+
+
+
+}
+
+header #hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+    transition: 0.3s ease;
+
+
+}
+
+header #hotel p {
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.643);
+}
+
+header nav ul {
+    display: flex;
+
+
+}
+
+header nav ul li {
+    padding: 0 15px;
+}
+
+header nav ul #link-6 a {
+    position: relative;
+    color: var(--beige);
+
+
+}
+
+header nav ul #link-6 a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    background-color: var(--beige);
+    display: block;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+header nav ul li a {
+    position: relative;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.25s ease;
+}
+
+header nav ul li a::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: var(--beige);
+    display: block;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    opacity: 0;
+    bottom: -2px;
+
+}
+
+header nav ul li a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--beige);
+    display: block;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    opacity: 1;
+    bottom: -2px;
+
+}
+
+header nav ul li a:hover {
+    transition: 0.25s ease;
+    color: var(--beige);
+
+}
+
+header .menu {
+    width: 60px;
+    height: 60px;
+    background-color: var(--beige);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    display: none;
+    cursor: pointer;
+
+}
+
+header .menu .bar,
+header .menu::after,
+header .menu::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: var(--bleu);
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+header .menu.active::after {
+    transform: rotate(45deg) translate(-5px, -5px);
+    transition: 0.25s ease;
+}
+
+header .menu.active::before {
+    transform: rotate(-45deg) translate(-5px, 5px);
+    transition: 0.25s ease;
+}
+
+header .menu.active .bar {
+    opacity: 0;
+}
+
+.header .hero {
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "zin";
+    user-select: none;
+
+
+
+}
+
+.header .hero li {
+    margin-top: 80px;
+}
+
+.header .hero h1 {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: lighter;
+
+}
+
+
+.restauration {
+    width: 100%;
+    background: url(./resRght2.png);
+    background-color: rgba(0, 0, 0, 0.533);
+    background-blend-mode: multiply;
+    padding-bottom: 100px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'zin';
+    position: relative;
+    z-index: 1;
+
+
+
+
+}
+
+.restauration .diaporama {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+    border: 5px solid white;
+}
+
+
+
+
+.restauration .diaporama img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: opacity 1s ease;
+
+
+
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.restauration::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.153);
+    display: block;
+}
+
+.restauration .main-content h1 {
+    position: relative;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    max-width: fit-content;
+    margin: 60px auto;
+    color: white;
+
+
+}
+
+.restauration h1::before {
+    position: absolute;
+    content: '';
+    left: -30px;
+    bottom: 38%;
+    transform: translateY(-38%);
+    width: 45px;
+    height: 4px;
+    background-color: white;
+    display: block;
+    transform: rotate(90deg);
+    border-radius: 4px;
+
+}
+
+.restauration .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.restauration .resto-content {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgba(51, 50, 106, 0.377);
+    border: 1px solid var(--beige);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    border-bottom: none;
+
+
+}
+
+.restauration .resto-content:last-of-type {
+    border-top: none;
+    border-bottom: 1px solid var(--beige);
+}
+
+.restauration .resto-content .left {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+
+}
+
+.restauration .resto-content .right {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    border: 1px solid var(--beige);
+    border-left: none;
+    color: white;
+
+
+}
+
+.restauration .resto-content .right h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--bleu);
+    border-bottom: 1px solid var(--beige);
+    padding: 10px 0;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.restauration .resto-content .right li,
+.restauration .resto-content .right img {
+    vertical-align: middle;
+}
+
+.restauration .resto-content .right img {
+    margin-right: 10px;
+}
+
+.restauration .resto-content .right li {
+    margin: 25px 0;
+
+}
+
+.restauration .resto-content .right #last:last-of-type {
+    text-align: center;
+    margin-top: 45px !important;
+    background-color: rgb(255, 0, 0);
+}
+
+.restauration .resto-content .right p {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.restauration .resto-content .right #type {
+    border-top: 1px solid var(--beige);
+    border-bottom: 1px solid var(--beige);
+    padding: 5px 0;
+    padding-left: 20px;
+}
+
+.restauration .resto-content .left img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid var(--beige);
+}
+
+.arrow-up {
+    position: fixed;
+    right: 6px;
+    bottom: 10px;
+    z-index: 99;
+    transition: 0.4s ease;
+    opacity: 0.8;
+    transform: translateX(300px);
+    cursor: pointer;
+
+}
+
+.arrow-up.active {
+    transform: translateX(0);
+    transition: 0.4s ease;
+}
+
+.arrow-up:hover {
+    transition: 0.4s ease;
+    opacity: 1;
+}
+
+.arrow-up:active {
+    transition: 0.4s ease;
+    scale: 0.7;
+}
+
+
+footer {
+    color: white;
+    background-color: var(--beige);
+    font-family: 'zin';
+}
+
+footer .top {
+    background-color: var(--bleu);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 50px;
+
+}
+
+footer .top .content-1 {
+    width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+footer .box-1 h5,
+footer .box-1 p {
+    margin-bottom: 10px;
+}
+
+footer .box-1 .icone {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+footer .box-1 .icone div {
+    padding: 25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--beige);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+footer .box-1 .icone .fa-brands {
+    scale: 1;
+    color: var(--bleu);
+
+
+}
+
+footer .box-2 {
+    text-align: end;
+}
+
+footer .box-2 h5,
+footer .box-2 p {
+    margin-bottom: 10px;
+}
+
+footer .box-2 input {
+    margin-top: 50px;
+    padding: 13px;
+    width: 100%;
+    max-width: 300px;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
+    outline: none;
+}
+
+footer .box-2 input[type="submit"] {
+    width: 50px !important;
+    background-color: var(--bleu);
+    border: 1px solid var(--beige) !important;
+    cursor: pointer;
+    padding: 13px !important;
+    vertical-align: middle;
+
+}
+
+footer .box-2 input::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.64);
+}
+
+footer .box-2 form .icone {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+
+
+}
+
+footer .box-2 form .icone .fa {
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    color: var(--beige);
+
+}
+
+footer form {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+footer .bottom {
+    padding: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--bleu);
+}
+
+footer .bottom .content-2 {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .bottom .logo p {
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: 8px;
+}
+
+footer .bottom .content-2 .logo {
+    margin: 40px 0;
+
+}
+
+footer .bottom .content-2 span {
+    margin: 30px 0;
+    font-weight: bold;
+    color: rgba(51, 50, 106, 0.568);
+
+}
+
+footer .bottom .content-2 .lien p {
+    font-weight: bolder;
+    margin: 10px 0;
+    color: var(--bleu);
+    font-size: 12px;
+    text-transform: lowercase;
+    text-align: center;
+
+
+
+
+}
+
+footer .bottom .content-2 .lien a {
+    font-weight: bolder;
+    margin: 0 10px;
+    color: var(--bleu);
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.footer {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+header.active {
+    background-color: var(--bleu);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+
+}
+
+.section-1.active {
+    z-index: -1;
+}
+
+.section-3.active {
+    z-index: -1;
+}
+
+.section-4.active {
+    z-index: -1;
+}
+
+.section-1.actives {
+    z-index: -1;
+}
+
+.section-3.actives {
+    z-index: -1;
+}
+
+.section-4.actives {
+    z-index: -1;
+}
+
+.nav2.active {
+    position: fixed;
+    transition: 0.25s ease;
+    top: 230px;
+    transition-behavior: smooth;
+    transform: translateY(0);
+    z-index: 1;
+    opacity: 1;
+    display: block;
+
+
+}
+
+.nav2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 425px;
+    background-color: var(--bleu);
+
+    display: block;
+    padding-top: 30px;
+    transform: translateY(500px);
+
+    opacity: 0;
+    z-index: -1;
+    overflow-y: scroll !important;
+    display: none;
+
+
+
+}
+
+.nav2::-webkit-scrollbar {
+    width: 0;
+
+}
+
+
+
+.nav2 a {
+
+    font-family: "zin";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    z-index: 1;
+
+
+
+}
+
+.nav2 a:hover {
+    transition: 0.25s ease;
+    color: var(--beige);
+}
+
+.header {
+    min-height: 50vh;
+}
+
+.blend {
+    min-height: 50vh;
+}
+
+
+
+header .menu.actives {
+    position: fixed !important;
+
+
+
+
+}
+
+header .menu.active {
+    display: block !important;
+}
+
+header .menu {
+
+    position: absolute;
+    right: 80px;
+    top: 160px !important;
+    z-index: 1;
+
+
+}
+
+header .menu .bar,
+header .menu::before,
+header .menu::after {
+    position: relative;
+    right: -20px;
+    top: 15px;
+}
+
+.menu2.active {
+    display: none;
+}
+
+.menu2 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--beige);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    cursor: pointer;
+    position: fixed;
+    right: 6px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0.6;
+    transition: 0.25s ease;
+}
+
+.menu2:hover {
+    opacity: 1;
+    transition: 0.25s ease;
+}
+
+.menu2 .bar,
+.menu2::after,
+.menu2::before {
+    content: '';
+    width: 20px;
+    height: 3px;
+    background-color: var(--bleu);
+    display: block;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: 0.25s ease;
+}
+
+.header #left.active {
+    display: none;
+
+}
+
+
+
+
+.header #right.active {
+    display: none;
+}
+
+
+
+
+/* ------------------------------------RESPONSIVE RESERVATION-------------------------------------------------- */
+
+/* 2xl */
+
+@media (max-width:1453px) {
+
+    footer .top .content-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+
+
+    }
+
+    footer .top .content-1 .box-2 {
+        text-align: start;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    footer .top .content-1 .box-2 p {
+
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        text-indent: -10px;
+
+
+    }
+
+    footer .top .content-1 .box-2 form {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer .bottom {
+        text-align: center;
+    }
+}
+
+/* xl  */
+
+
+@media (max-width:1283px) {
+    header {
+        display: flex;
+        position: relative;
+        background-color: transparent;
+
+
+
+    }
+
+    header #hotel {
+        margin-left: 30px;
+        z-index: 1;
+
+
+    }
+
+
+    header nav {
+        display: none;
+    }
+
+    header.active {
+        background-color: var(--bleu);
+        position: fixed;
+        top: 0;
+        z-index: 2;
+
+
+    }
+
+    .section-1.active {
+        z-index: -1;
+    }
+
+    .section-3.active {
+        z-index: -1;
+    }
+
+    .section-4.active {
+        z-index: -1;
+    }
+
+    .section-1.actives {
+        z-index: -1;
+    }
+
+    .section-3.actives {
+        z-index: -1;
+    }
+
+    .section-4.actives {
+        z-index: -1;
+    }
+
+    .nav2.active {
+        position: fixed;
+        transition: 0.25s ease;
+        top: 230px;
+        transition-behavior: smooth;
+        transform: translateY(0);
+        z-index: 1;
+        opacity: 1;
+
+
+
+    }
+
+    .nav2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0 auto;
+        height: 425px;
+        background-color: var(--bleu);
+
+        display: block;
+        padding-top: 30px;
+        transform: translateY(500px);
+
+        opacity: 0;
+        z-index: -1;
+        overflow-y: scroll !important;
+
+
+
+    }
+
+    .nav2::-webkit-scrollbar {
+        width: 0;
+
+    }
+
+
+
+    .nav2 a {
+
+        font-family: "zin";
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 13px;
+        color: white;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        z-index: 1;
+
+
+
+    }
+
+    .nav2 a:hover {
+        transition: 0.25s ease;
+        color: var(--beige);
+    }
+
+    .header {
+        min-height: 50vh;
+    }
+
+    .blend {
+        min-height: 50vh;
+    }
+
+    .header .booking {
+
+        margin-top: 200px !important;
+    }
+
+    header .menu.actives {
+        position: fixed !important;
+
+
+
+
+    }
+
+    header .menu {
+        display: block !important;
+        position: absolute;
+        right: 80px;
+        top: 160px;
+        z-index: 1;
+
+    }
+
+    header .menu .bar,
+    header .menu::before,
+    header .menu::after {
+        position: relative;
+        right: -20px;
+        top: 15px;
+    }
+
+    .menu2.active {
+        display: none;
+    }
+
+    .menu2 {
+        width: 60px;
+        height: 60px;
+        background-color: var(--beige);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        cursor: pointer;
+        position: fixed;
+
+        right: 6px;
+        margin: 0 auto;
+        z-index: 2;
+        opacity: 0.6;
+        transition: 0.25s ease;
+    }
+
+    .menu2:hover {
+        opacity: 1;
+        transition: 0.25s ease;
+    }
+
+    .menu2 .bar,
+    .menu2::after,
+    .menu2::before {
+        content: '';
+        width: 20px;
+        height: 3px;
+        background-color: var(--bleu);
+        display: block;
+        margin-bottom: 4px;
+        border-radius: 10px;
+        transition: 0.25s ease;
+    }
+
+}
+
+/* lg  */
+
+@media (max-width:1040px) {
+    .restauration .resto-content {
+        display: flex;
+        flex-direction: column;
+
+
+
+    }
+
+    .restauration .resto-content .left {
+        height: auto;
+
+    }
+
+    .resto-content .right {
+        border-left: 1px solid var(--beige) !important;
+        max-width: 600px !important;
+    }
+}
+
+@media (max-width:902px) {
+    .reservation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
+/* md */
+@media (max-width:776px) {
+    main {
+        padding: 0 0 150px 0;
+    }
+}
+
+@media (max-width:790px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        height: 170px;
+
+
+    }
+
+    header #hotel {
+        scale: 0.8;
+    }
+
+
+
+
+
+    .menu {
+        display: block !important;
+        width: 60px;
+        height: 60px;
+        background-color: var(--beige);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        margin: 0 auto;
+        left: 0 !important;
+        right: 0 !important;
+        top: 130px !important;
+        position: absolute !important;
+        z-index: 2 !important;
+
+    }
+
+    .menu.active {
+        position: absolute;
+        top: 544px !important;
+        z-index: 2;
+
+    }
+
+
+
+    .nav2.active {
+        top: 150px;
+    }
+
+
+    .nav2 {
+        padding-top: 0;
+    }
+
+
+
+    header #hotel {
+        margin-left: 40px;
+
+
+    }
+
+    .header .hero {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width:768px) {}
+
+/* sm */
+@media (max-width:640px) {}
+
+@media (max-width:623px) {}
+
+/* xm */
+@media (max-width:475px) {
+    .header .hero h1 {
+        font-size: 2rem !important;
+
+    }
+
+    body {
+        font-size: 14px !important;
+    }
+
+    footer .top .content-1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer .top {
+        padding: 50px 20px;
+    }
+
+    footer .bottom {
+        padding: 50px 0;
+    }
+}
+
+
+@media (max-width:460px) {
+    .restauration .resto-content {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width:386px) {
+
+    .reservation form {
+        padding: 30px 0;
+    }
+}
+
+
+
+@media (max-width:271px) {
+    .header .hero #label2 #fa {
+        position: absolute;
+        right: 12px;
+        top: 53px;
+        scale: 0.8;
+        z-index: 1;
+
+
+    }
+}
