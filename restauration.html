@@ -259,14 +259,13 @@
     <script>
 
     window.addEventListener('resize', function() {
-        var spheres = document.querySelectorAll('.sphere');
-        spheres.forEach(sphere =>{
-            var width = window.innerWidth * 0.5; // 50% de la largeur de l'écran
+        var sphere = document.querySelectorAll('.sphere');
+        var width = window.innerWidth * 0.5; // 50% de la largeur de l'écran
         var height = window.innerHeight * 0.5; // 50% de la hauteur de l'écran
         var minDimension = Math.min(width, height);
         sphere.style.width = minDimension + 'px';
         sphere.style.height = minDimension + 'px';
-        })
+        
        
     });
        
