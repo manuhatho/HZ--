@@ -323,17 +323,26 @@ header .menu.active .bar {
     flex-direction: column;
     margin-bottom: 60px;
     border: 5px solid white;
+ 
+
 }
 
 
 
 
 .restauration .diaporama img {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   
+    max-width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
     animation: opacity 1s ease;
+    padding: 5px;
+  
+
 
 
 
