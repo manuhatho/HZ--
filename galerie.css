@@ -115,7 +115,7 @@ header nav {
 
 
 .nav2 {
-    display: none;
+    visibility: hidden;
 }
 
 
@@ -638,9 +638,7 @@ footer .bottom .content-2 .lien a {
     position: absolute;
 }
 
-.nav2{
-    display: none !important;
-}
+
 header.active {
     background-color: var(--bleu);
     position: fixed;
@@ -682,7 +680,7 @@ header.active {
     transform: translateY(0);
     z-index: 1;
     opacity: 1;
-    display: block !important;
+    visibility: visible !important;
 
 
 }
@@ -696,14 +694,13 @@ header.active {
     height: 425px;
     background-color: var(--bleu);
 
-    display: block;
-    padding-top: 30px;
+     padding-top: 30px;
     transform: translateY(500px);
 
     opacity: 0;
     z-index: -1;
     overflow-y: scroll !important;
-    display: none;
+    visibility: hidden;
 
 
 

@@ -115,7 +115,7 @@ header nav {
 
 
 .nav2 {
-    display: none;
+     visibility: hidden;
 }
 
 
@@ -688,7 +688,7 @@ header.active {
     transform: translateY(0);
     z-index: 1;
     opacity: 1;
-    display: block;
+    visibility: visible !important;
   
 
 }
@@ -702,14 +702,13 @@ header.active {
     height: 425px;
     background-color: var(--bleu);
 
-    display: block;
     padding-top: 30px;
     transform: translateY(500px);
    
     opacity: 0;
     z-index: -1;
     overflow-y: scroll !important;
-    display: none;
+    visibility: hidden;
 
 
 

@@ -115,7 +115,7 @@ header nav {
 
 
 .nav2 {
-    display: none;
+    visibility: hidden !important;
 }
 
 
@@ -651,9 +651,7 @@ footer .bottom .content-2 .lien a {
     position: absolute;
 }
 
-.nav2 {
-    display: none !important;
-}
+
 
 header.active {
     background-color: var(--bleu);
@@ -673,7 +671,8 @@ header.active {
     transform: translateY(0);
     z-index: 1;
     opacity: 1;
-    display: block !important;
+    visibility: visible !important;
+
 
 
 }
@@ -694,7 +693,7 @@ header.active {
     opacity: 0;
     z-index: -1;
     overflow-y: scroll !important;
-    display: none;
+  visibility: hidden;
 
 
 
@@ -921,29 +920,7 @@ header .menu::after {
 
     }
 
-    .section-1.active {
-        z-index: -1;
-    }
 
-    .section-3.active {
-        z-index: -1;
-    }
-
-    .section-4.active {
-        z-index: -1;
-    }
-
-    .section-1.actives {
-        z-index: -1;
-    }
-
-    .section-3.actives {
-        z-index: -1;
-    }
-
-    .section-4.actives {
-        z-index: -1;
-    }
 
     .nav2.active {
         position: fixed;
@@ -972,7 +949,7 @@ header .menu::after {
 
         opacity: 0;
         z-index: -1;
-        overflow-y: scroll !important;
+        overflow-y: scroll;
 
 
 
@@ -980,6 +957,7 @@ header .menu::after {
 
     .nav2::-webkit-scrollbar {
         width: 0;
+        
 
     }
 
