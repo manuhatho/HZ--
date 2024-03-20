@@ -625,6 +625,19 @@ footer .bottom .content-2 .lien a {
 
 }
 
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+.fb_iframe_widget span {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+.fb_iframe_widget iframe {
+    position: absolute;
+}
+
 .nav2{
     display: none !important;
 }
