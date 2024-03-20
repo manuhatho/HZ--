@@ -315,6 +315,7 @@ font-family: "zin";
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     overflow-x: hidden;
+    background-color: white;
 }
 .boutique-content .boutique-slide img{
     width: 100%;
