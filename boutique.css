@@ -352,6 +352,7 @@ main .div{
     color: white;
     padding: 5px 0;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .content-1 h4{
@@ -362,6 +363,7 @@ main .div{
     background: linear-gradient(to left, var(--beige) 5%, var(--bleu) 76%);
     color: white;
     padding: 5px 0;
+
 }
 .content-1 button{
     background-color: white;
