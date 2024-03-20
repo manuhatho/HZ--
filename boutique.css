@@ -864,6 +864,15 @@ header .menu::after {
         
     
     }
+
+    .boutique-content .boutique-slide{
+        width: 100%;
+        height: auto;
+    }
+    .boutique-content .boutique-slide img{
+        width: 100%;
+        height: auto;
+    }
     .boutique-content .content-2{
         background-color: white;
         border-radius: 0 0 15px 15px;
